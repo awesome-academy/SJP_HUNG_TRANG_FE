@@ -1,0 +1,44 @@
+{
+    "Footer": {
+        "contactTitle": "Liên hệ với chúng tôi",
+        "addressLine1": "Tầng 4, Tòa nhà Hanoi Group Số 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội",
+        "addressLine2": "",
+        "newsletterPlaceholder": "Nhập email nhận tin",
+        "sendButton": "Gửi",
+        "sections": {
+            "shipping": "Chuyển hàng",
+            "support": "Hỗ trợ",
+            "info": "Thông tin",
+            "account": "Tài khoản"
+        },
+        "shippingLinks": [
+            "Mua sắm trực tuyến",
+            "Đến từ chúng tôi gửi đến",
+            "Chính sách vận chuyển",
+            "Vận chuyển thông tin"
+        ],
+        "supportLinks": [
+            "Câu chuyện của chúng ta",
+            "Thanh toán an toàn",
+            "Tùy chọn vận chuyển",
+            "Chính sách vận chuyển"
+        ],
+        "infoLinks": [
+            "Về chúng tôi",
+            "Điều khoản & điều kiện",
+            "Chính sách riêng tư",
+            "Đơn đặt hàng và hoàn trả"
+        ],
+        "accountLinks": [
+            "Sản phẩm yêu thích",
+            "Tài khoản",
+            "Đăng ký",
+            "Đăng nhập"
+        ],
+        "locale": {
+            "vi": "Tiếng Việt",
+            "en": "English"
+        },
+        "copyright": "© Copyright 2008-2014 DKT Technology JSC"
+    }
+}

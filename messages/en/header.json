@@ -1,0 +1,22 @@
+{
+    "Header": {
+        "logoAlt": "Mandala logo",
+        "nav": {
+            "home": "Home",
+            "about": "About",
+            "products": "Products",
+            "news": "News",
+            "map": "Map",
+            "contact": "Contact"
+        },
+        "actions": {
+            "cart": "Cart",
+            "search": "Search",
+            "menu": "Menu"
+        },
+        "locale": {
+            "vi": "Tiếng Việt",
+            "en": "English"
+        }
+    }
+}

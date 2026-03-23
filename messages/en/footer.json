@@ -1,0 +1,44 @@
+{
+    "Footer": {
+        "contactTitle": "Contact us",
+        "addressLine1": "Floor 4, Hanoi Group Building, 442 Doi Can, Cong Vi Ward, Ba Dinh District, Hanoi",
+        "addressLine2": "",
+        "newsletterPlaceholder": "Enter your email",
+        "sendButton": "Send",
+        "sections": {
+            "shipping": "Shipping",
+            "support": "Support",
+            "info": "Information",
+            "account": "Account"
+        },
+        "shippingLinks": [
+            "Online shopping",
+            "From us to your door",
+            "Shipping policy",
+            "Shipping information"
+        ],
+        "supportLinks": [
+            "Our story",
+            "Secure payment",
+            "Delivery options",
+            "Shipping policy"
+        ],
+        "infoLinks": [
+            "About us",
+            "Terms & conditions",
+            "Privacy policy",
+            "Orders and returns"
+        ],
+        "accountLinks": [
+            "Wishlist",
+            "Account",
+            "Register",
+            "Login"
+        ],
+        "locale": {
+            "vi": "Tiếng Việt",
+            "en": "English"
+        },
+        "copyright": "© Copyright 2008-2014 DKT Technology JSC"
+    }
+}
