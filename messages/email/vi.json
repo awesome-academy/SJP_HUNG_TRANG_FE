@@ -1,0 +1,8 @@
+{
+  "activate": {
+    "subject": "Kích hoạt tài khoản của bạn",
+    "greeting": "Xin chào {firstName}",
+    "content": "Nhấp vào liên kết dưới đây để kích hoạt tài khoản của bạn:",
+    "button": "Kích hoạt"
+  }
+}

@@ -12,7 +12,10 @@
         "actions": {
             "cart": "Giỏ hàng",
             "search": "Tìm kiếm",
-            "menu": "Menu"
+            "menu": "Menu",
+            "signIn": "Đăng nhập",
+            "signOut": "Đăng xuất",
+            "profile": "Tài khoản"
         },
         "locale": {
             "vi": "Tiếng Việt",
