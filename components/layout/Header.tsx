@@ -11,6 +11,7 @@ import {
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import LocaleSwitcher from "@/components/layout/LocaleSwitcher";
+import UserMenu from "@/components/layout/UserMenu";
 
 type HeaderProps = {
 	locale: "vi" | "en";
@@ -70,6 +71,16 @@ export default async function Header({ locale }: HeaderProps) {
 					<LocaleSwitcher
 						locale={locale}
 						labels={{ vi: t("locale.vi"), en: t("locale.en") }}
+					/>
+					
+					<div className="h-6 w-px bg-zinc-300"></div>
+					<UserMenu
+						locale={locale}
+						labels={{
+						signIn: t("actions.signIn"),
+						signOut: t("actions.signOut"),
+						profile: t("actions.profile"),
+						}}
 					/>
 				</div>
 

@@ -12,7 +12,10 @@
         "actions": {
             "cart": "Cart",
             "search": "Search",
-            "menu": "Menu"
+            "menu": "Menu",
+            "signIn": "Sign In",
+            "signOut": "Sign Out",
+            "profile": "Profile"
         },
         "locale": {
             "vi": "Tiếng Việt",
