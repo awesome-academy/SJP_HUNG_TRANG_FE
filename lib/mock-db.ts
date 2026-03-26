@@ -22,19 +22,19 @@ export type Category = {
 };
 
 export type ProductImage = {
-  id: number;
+  id?: number | string | undefined;
   url: string;
   isMain?: boolean;
   sortOrder?: number;
 };
 
 export type Product = {
-  id: number;
+  id: number | string;
   name: string;
   description: string;
   price: number;
   stock: number;
-  categoryId: number;
+  categoryId: number | string;
   images: ProductImage[];
 };
 
