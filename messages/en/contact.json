@@ -1,0 +1,34 @@
+{
+    "ContactPage": {
+        "title": "CONTACT",
+        "subtitle": "Subscribe for email updates or send product suggestions you want us to add.",
+        "actions": {
+            "submitting": "Submitting..."
+        },
+        "newsletter": {
+            "title": "EMAIL SUBSCRIPTION",
+            "description": "Enter your email to receive the latest updates, offers, and featured products.",
+            "emailLabel": "Email",
+            "emailPlaceholder": "example@email.com",
+            "submit": "Subscribe",
+            "success": "Subscribed successfully.",
+            "existed": "This email is already subscribed.",
+            "error": "Unable to subscribe right now. Please try again."
+        },
+        "suggestion": {
+            "title": "PRODUCT SUGGESTION",
+            "descriptionText": "Send your suggestion so we can consider adding a new product.",
+            "productNameLabel": "Product name",
+            "productNamePlaceholder": "Example: Macbook Pro M3",
+            "descriptionLabel": "Description",
+            "descriptionPlaceholder": "Example: Please add this product",
+            "photosLabel": "Reference photo",
+            "photosHelp": "Choose one image to upload.",
+            "previewTitle": "Photo to submit",
+            "submit": "Submit suggestion",
+            "success": "Product suggestion submitted successfully.",
+            "error": "Unable to submit suggestion right now. Please try again.",
+            "uploadError": "Failed to upload images or submit suggestion. Please try again."
+        }
+    }
+}
