@@ -1,6 +1,5 @@
 import ProductsCatalog from "@/components/products/ProductsCatalog";
 import { getCatalogData } from "@/lib/catalog-server";
-import { apiGet } from "@/lib/json-server";
 
 type ProductsPageProps = {
   params: Promise<{ locale: "vi" | "en" }>;
