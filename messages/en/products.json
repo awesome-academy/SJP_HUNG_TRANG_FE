@@ -1,0 +1,14 @@
+{
+    "ProductsPage": {
+        "empty": "No products found in this category.",
+        "filters": {
+            "title": "Product categories",
+            "all": "All products",
+            "toggle": "Toggle {name}"
+        },
+        "detail": {
+            "categoryFallback": "Category",
+            "stock": "In stock: {count}"
+        }
+    }
+}

@@ -1,6 +1,3 @@
-import { readFile, writeFile } from "node:fs/promises";
-import path from "node:path";
-
 export type EmailSubscription = {
   id: number;
   email: string;
@@ -18,27 +15,48 @@ export type ProductSuggestion = {
   photos: SuggestionPhoto[];
 };
 
-type MockDb = {
-  emailSubscriptions?: EmailSubscription[];
-  productSuggestions?: ProductSuggestion[];
-  [key: string]: unknown;
+export type Category = {
+  id: number;
+  name: string;
+  parentId: number | null;
 };
 
-const dbPath = path.join(process.cwd(), "db.json");
+export type ProductImage = {
+  id: number;
+  url: string;
+  isMain?: boolean;
+  sortOrder?: number;
+};
 
-export async function readMockDb(): Promise<MockDb> {
-  const raw = await readFile(dbPath, "utf-8");
-  return JSON.parse(raw) as MockDb;
-}
+export type Product = {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  stock: number;
+  categoryId: number;
+  images: ProductImage[];
+};
 
-export async function writeMockDb(db: MockDb): Promise<void> {
-  await writeFile(dbPath, JSON.stringify(db, null, 2), "utf-8");
-}
-
-export function nextId(items: Array<{ id: number }>): number {
-  if (!items.length) {
-    return 1;
+export function getMainImage(images: ProductImage[]): string {
+  const mainImage = images.find((image) => image.isMain);
+  if (mainImage) {
+    return mainImage.url;
   }
 
-  return Math.max(...items.map((item) => item.id)) + 1;
+  if (images.length > 0) {
+    return images[0].url;
+  }
+
+  return "/images/placeholder-product.jpg";
+}
+
+export function formatPriceVnd(value: number, locale: "vi" | "en" = "vi"): string {
+  const numberLocale = locale === "en" ? "en-US" : "vi-VN";
+
+  return new Intl.NumberFormat(numberLocale, {
+    style: "currency",
+    currency: "VND",
+    maximumFractionDigits: 0,
+  }).format(value);
 }

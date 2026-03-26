@@ -22,7 +22,7 @@ export default async function Header({ locale }: HeaderProps) {
 
 	const navItems = [
 		{ label: t("nav.home"), href: "/" },
-		{ label: t("nav.products"), href: "#", active: false, hasDropdown: false },
+		{ label: t("nav.products"), href: "/products", active: false, hasDropdown: false },
 		{ label: t("nav.about"), href: "/about" },
 		{ label: t("nav.contact"), href: "/contact" },
 	];

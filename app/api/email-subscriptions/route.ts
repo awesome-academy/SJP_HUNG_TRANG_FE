@@ -1,39 +1,24 @@
 import { NextResponse } from "next/server";
+import { apiGet, apiPost } from "@/lib/json-server";
+import type { EmailSubscription } from "@/lib/mock-db";
+import { getTranslations } from "next-intl/server";
 
-import { nextId, readMockDb, writeMockDb } from "@/lib/mock-db";
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 
 export async function POST(request: Request) {
-  try {
-    const body = (await request.json()) as { email?: string };
-    const email = body.email?.trim().toLowerCase();
-
-    if (!email) {
-      return NextResponse.json({ message: "Email is required" }, { status: 400 });
-    }
-
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-      return NextResponse.json({ message: "Invalid email format" }, { status: 400 });
-    }
-
-    const db = await readMockDb();
-    const subscriptions = Array.isArray(db.emailSubscriptions) ? db.emailSubscriptions : [];
-
-    const existed = subscriptions.some((item) => item.email.toLowerCase() === email);
-    if (existed) {
-      return NextResponse.json({ message: "Email already subscribed" }, { status: 409 });
-    }
-
-    const newSubscription = {
-      id: nextId(subscriptions),
-      email,
-    };
-
-    db.emailSubscriptions = [...subscriptions, newSubscription];
-    await writeMockDb(db);
-
-    return NextResponse.json(newSubscription, { status: 201 });
-  } catch {
-    return NextResponse.json({ message: "Failed to subscribe email" }, { status: 500 });
+  const { email } = await request.json();
+  const t = await getTranslations("ContactPage");
+  
+  if (!email || !EMAIL_REGEX.test(email)) {
+    return NextResponse.json({ error: t("newsletter.error") }, { status: 400 });
   }
+
+  const existingSubscriptions = await apiGet<EmailSubscription[]>("/emailSubscriptions");
+  if (existingSubscriptions.some((sub) => sub.email === email)) {
+    return NextResponse.json({ error: t("newsletter.existed") }, { status: 409 }); 
+  }
+
+  const result = await apiPost<EmailSubscription>("/emailSubscriptions", { email });
+  return NextResponse.json(result, { status: 201 });
 }

@@ -12,16 +12,16 @@ export default async function AboutPage() {
 				</h1>
 
 				<div className="grid grid-cols-1 gap-7 lg:grid-cols-[1fr_1fr] lg:gap-10">
-					<div className="overflow-hidden bg-zinc-100 flexr">
+					<div className="relative h-[200px] w-full overflow-hidden bg-zinc-100 md:h-[420px] lg:h-[560px]">
                         <Image
-                            src="/images/about-us.jpg"
+                            src="/images/about-us1.jpg"
                             alt={t("imageAlt")}
-                            width={900}
-                            height={560}
-                            className="h-[300px] w-full scale-85 object-cover md:h-[420px] lg:h-[560px]"
+							fill
+							sizes="(min-width: 1024px) 50vw, 100vw"
+							className="object-cover"
                             priority
                         />
-                        </div>
+                    </div>
 
 					<div className="flex flex-col gap-6 pt-1 md:pt-3">
 						<Image
@@ -30,6 +30,7 @@ export default async function AboutPage() {
 							width={340}
 							height={120}
 							className="h-auto w-[240px] object-contain md:w-[340px]"
+							style={{ height: "auto" }}
 						/>
 
 						<h2 className="text-2xl font-semibold uppercase leading-tight text-zinc-800 md:text-[24px] md:leading-[1.15]">
