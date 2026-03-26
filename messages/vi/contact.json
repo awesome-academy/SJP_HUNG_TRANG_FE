@@ -1,0 +1,34 @@
+{
+    "ContactPage": {
+        "title": "LIÊN HỆ",
+        "subtitle": "Đăng ký nhận thông báo qua email hoặc gửi đề xuất sản phẩm bạn muốn cửa hàng bổ sung.",
+        "actions": {
+            "submitting": "Đang gửi..."
+        },
+        "newsletter": {
+            "title": "ĐĂNG KÝ NHẬN THÔNG BÁO",
+            "description": "Nhập email của bạn để nhận tin tức mới nhất, ưu đãi và sản phẩm nổi bật.",
+            "emailLabel": "Email",
+            "emailPlaceholder": "example@email.com",
+            "submit": "Đăng ký",
+            "success": "Đăng ký nhận thông báo thành công.",
+            "existed": "Email này đã đăng ký trước đó.",
+            "error": "Không thể đăng ký lúc này, vui lòng thử lại."
+        },
+        "suggestion": {
+            "title": "ĐỀ XUẤT SẢN PHẨM",
+            "descriptionText": "Gửi đề xuất để chúng tôi cân nhắc nhập thêm sản phẩm mới.",
+            "productNameLabel": "Tên sản phẩm",
+            "productNamePlaceholder": "Ví dụ: Macbook Pro M3",
+            "descriptionLabel": "Mô tả",
+            "descriptionPlaceholder": "Ví dụ: Hãy thêm sản phẩm này vào cửa hàng",
+            "photosLabel": "Hình ảnh tham khảo",
+            "photosHelp": "Chọn một ảnh để tải lên.",
+            "previewTitle": "Ảnh sẽ gửi",
+            "submit": "Gửi đề xuất",
+            "success": "Gửi đề xuất sản phẩm thành công.",
+            "error": "Không thể gửi đề xuất lúc này, vui lòng thử lại.",
+            "uploadError": "Tải ảnh hoặc gửi đề xuất thất bại, vui lòng thử lại."
+        }
+    }
+}

@@ -113,6 +113,18 @@
       "createdAt": "2026-03-27T10:58:59.264Z",
       "subscribe": true,
       "id": "jcRa-2W"
+    },
+    {
+      "email": "tnhworkmail@gmail.com",
+      "password": "Ngochung@2004",
+      "fullName": "Hung Tran",
+      "role": "USER",
+      "isActive": true,
+      "activateToken": "34f9e9d2-ba13-47c1-b8a7-9249ab77cae8",
+      "activateTokenExpires": 1774929451565,
+      "createdAt": "2026-03-31T02:57:31.565Z",
+      "subscribe": true,
+      "id": "zJ6VMjU"
     }
   ],
   "categories": [
@@ -279,6 +291,14 @@
     {
       "email": "hehe789@gmail.com",
       "id": "HFiKGa1"
+    },
+    {
+      "email": "tnhworkmail@gmail.com",
+      "id": "1X8Gckl"
+    },
+    {
+      "email": "hungngtran04@gmail.com",
+      "id": "tMPp-SH"
     }
   ],
   "productSuggestions": [
@@ -296,6 +316,40 @@
           "url": "/images/suggestion-2.jpg"
         }
       ]
+    },
+    {
+      "productName": "Macbook M9",
+      "description": "Hihi",
+      "photos": [],
+      "id": "jV2J-qX"
+    },
+    {
+      "productName": "M10",
+      "description": "Heheheheh",
+      "photos": [
+        {
+          "url": "/uploads/suggested-products/1774927222069-z5362773683846_05d519ef35cf3f2263957c087da04109.jpg"
+        }
+      ],
+      "id": "wedGNwX"
+    },
+    {
+      "productName": "M12",
+      "description": "hehhehehhe",
+      "photos": [],
+      "id": "ayEOtFB"
+    },
+    {
+      "productName": "M12",
+      "description": "Hi",
+      "photos": [],
+      "id": "GfYORFX"
+    },
+    {
+      "productName": "M19",
+      "description": "Hihihihihihihihihih",
+      "photos": [],
+      "id": "4pkdd_w"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
