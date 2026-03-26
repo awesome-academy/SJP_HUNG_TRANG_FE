@@ -1,0 +1,9 @@
+{
+    "SearchPage": {
+        "title": "Tìm kiếm sản phẩm",
+        "placeholder": "Nhập tên sản phẩm...",
+        "searchingFor": "Kết quả cho \"{keyword}\"",
+        "emptyQuery": "Nhập từ khóa để bắt đầu tìm sản phẩm.",
+        "emptyResult": "Không tìm thấy sản phẩm phù hợp với từ khóa bạn nhập."
+    }
+}
