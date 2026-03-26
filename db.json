@@ -125,6 +125,18 @@
       "createdAt": "2026-03-31T02:57:31.565Z",
       "subscribe": true,
       "id": "zJ6VMjU"
+    },
+    {
+      "email": "hihi123@gmail.com",
+      "password": "123456",
+      "fullName": "u u u u",
+      "role": "USER",
+      "isActive": true,
+      "activateToken": null,
+      "activateTokenExpires": null,
+      "createdAt": "2026-03-31T02:45:14.284Z",
+      "subscribe": true,
+      "id": "adSYfjm"
     }
   ],
   "categories": [
@@ -299,6 +311,10 @@
     {
       "email": "hungngtran04@gmail.com",
       "id": "tMPp-SH"
+    },
+    {
+      "email": "hihi123@gmail.com",
+      "id": "gew_lS4"
     }
   ],
   "productSuggestions": [
