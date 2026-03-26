@@ -15,6 +15,11 @@
             "signOut": "Đăng xuất",
             "profile": "Tài khoản"
         },
+        "search": {
+            "placeholder": "Nhập tên sản phẩm...",
+            "submit": "Tìm kiếm",
+            "close": "Đóng tìm kiếm"
+        },
         "locale": {
             "vi": "Tiếng Việt",
             "en": "English"

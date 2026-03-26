@@ -61,10 +61,18 @@ export default async function Header({ locale }: HeaderProps) {
 						<ShoppingCart className="h-5 w-5" />
 						<span className="sr-only">{t("actions.cart")}</span>
 					</Button>
-					<Button variant="ghost" size="icon" className="text-zinc-900 hover:bg-zinc-100 hover:text-zinc-900">
+					<Link
+						href="/search"
+						locale={locale}
+						className={buttonVariants({
+							variant: "ghost",
+							size: "icon",
+							className: "text-zinc-900 hover:bg-zinc-100 hover:text-zinc-900",
+						})}
+					>
 						<Search className="h-5 w-5" />
 						<span className="sr-only">{t("actions.search")}</span>
-					</Button>
+					</Link>
 					<div className="h-6 w-px bg-zinc-300"></div>
 					<LocaleSwitcher
 						locale={locale}

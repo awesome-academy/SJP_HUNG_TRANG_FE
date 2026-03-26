@@ -508,6 +508,12 @@
       "description": "Đẹp lắm bro ạ",
       "photos": [],
       "id": "nGeEuuA"
+    },
+    {
+      "productName": "a",
+      "description": "aa",
+      "photos": [],
+      "id": "7QN870_"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
