@@ -1,0 +1,22 @@
+{
+    "Header": {
+        "logoAlt": "Mandala logo",
+        "nav": {
+            "home": "Trang chủ",
+            "about": "Giới thiệu",
+            "products": "Sản phẩm",
+            "news": "Tin tức",
+            "map": "Bản đồ",
+            "contact": "Liên hệ"
+        },
+        "actions": {
+            "cart": "Giỏ hàng",
+            "search": "Tìm kiếm",
+            "menu": "Menu"
+        },
+        "locale": {
+            "vi": "Tiếng Việt",
+            "en": "English"
+        }
+    }
+}
