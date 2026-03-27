@@ -1,0 +1,25 @@
+{
+  "CartPage": {
+    "title": "Giỏ hàng",
+    "selectAll": "Chọn tất cả",
+    "clearCart": "Xóa tất cả",
+    "empty": "Giỏ hàng của bạn đang trống",
+    "continueShopping": "Tiếp tục mua sắm",
+    "item": {
+      "remove": "Xóa sản phẩm"
+    },
+    "summary": {
+      "summary": "Tóm tắt đơn hàng",
+      "selected": "Sản phẩm đã chọn",
+      "total": "Tổng tiền",
+      "checkout": "Thanh toán",
+      "clearSelected": "Xóa khỏi giỏ hàng",
+      "noItemSelected": "Vui lòng chọn sản phẩm để thanh toán"
+    }
+  },
+  "AddToCart": {
+    "add": "Thêm vào giỏ",
+    "added": "Đã thêm",
+    "outOfStock": "Hết hàng"
+  }
+}

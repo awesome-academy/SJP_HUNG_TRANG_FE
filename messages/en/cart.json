@@ -1,0 +1,25 @@
+{
+  "CartPage": {
+    "title": "Shopping Cart",
+    "selectAll": "Select all",
+    "clearCart": "Clear all",
+    "empty": "Your cart is empty",
+    "continueShopping": "Continue shopping",
+    "item": {
+      "remove": "Remove item"
+    },
+    "summary": {
+      "summary": "Order Summary",
+      "selected": "Selected items",
+      "total": "Total",
+      "checkout": "Checkout",
+      "clearSelected": "Remove selected from cart",
+      "noItemSelected": "Please select items to checkout"
+    }
+  },
+  "AddToCart": {
+    "add": "Add to cart",
+    "added": "Added",
+    "outOfStock": "Out of stock"
+  }
+}

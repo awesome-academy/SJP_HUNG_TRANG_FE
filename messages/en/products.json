@@ -7,6 +7,9 @@
             "toggle": "Toggle {name}"
         },
         "detail": {
+            "backToProducts": "← Back to product listing",
+            "categoryLabel": "Category",
+            "descriptionTitle": "Product description",
             "categoryFallback": "Category",
             "stock": "In stock: {count}"
         }
