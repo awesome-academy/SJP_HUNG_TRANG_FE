@@ -4,6 +4,10 @@ import { getServerSession } from "next-auth";
 
 const BASE = process.env.JSON_SERVER_URL;
 
+if (!BASE) {
+  throw new Error("JSON_SERVER_URL environment variable is not configured");
+}
+
 // GET user detail
 export async function GET(
   _: Request,
