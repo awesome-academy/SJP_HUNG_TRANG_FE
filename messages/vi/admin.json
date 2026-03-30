@@ -1,5 +1,5 @@
 {
-    "AdminPage": {
+    "Admin": {
         "title": "Admin Dashboard",
         "subtitle": "Theo dõi số liệu kinh doanh và các sản phẩm người dùng đề xuất.",
         "stats": {
@@ -28,6 +28,78 @@
             "pagination": "Trang {current}/{total}",
             "prev": "Trước",
             "next": "Sau"
+        },
+        "users": {
+            "title": "Quản lý người dùng",
+            "subtitle": "Xem và quản lý toàn bộ tài khoản trong hệ thống",
+            "refresh": "Làm mới",
+
+            "stats": {
+            "total": "Tổng người dùng"
+            },
+
+            "search": {
+            "placeholder": "Tìm tên, email, số điện thoại..."
+            },
+
+            "filters": {
+            "all": "Tất cả",
+            "active": "Hoạt động",
+            "inactive": "Chưa kích hoạt",
+            "clear": "Xoá bộ lọc",
+            "found": "Tìm thấy {total} kết quả",
+            "user": "User",
+            "admin": "Admin"
+            },
+
+            "table": {
+            "headers": {
+                "user": "Người dùng",
+                "email": "Email",
+                "phone": "Số điện thoại",
+                "role": "Vai trò",
+                "status": "Trạng thái",
+                "createdAt": "Ngày tạo"
+            },
+            "empty": "Không có người dùng nào.",
+            "loading": "Đang tải...",
+            "N/A": "N/A"
+            },
+
+            "actions": {
+            "title": "Hành động",
+            "view": "Xem",
+            "delete": "Xoá"
+            },
+
+            "deleteDialog": {
+            "title": "Xoá người dùng?",
+            "description": "Bạn có chắc muốn xoá {name}? Hành động này không thể hoàn tác.",
+            "cancel": "Huỷ",
+            "confirm": "Xoá",
+            "error": "Xoá thất bại. Vui lòng thử lại."
+            },
+
+            "pagination": {
+            "showing": "Hiển thị {from}–{to} trong {total} kết quả"
+            },
+
+            "error": {
+            "load": "Không thể tải danh sách người dùng."
+            },
+            
+            "roles": {
+                "ADMIN": "Admin",
+                "USER": "User"
+                },
+            
+            "orderStatus": {
+                "pending": "Chờ xác nhận",
+                "confirmed": "Đã xác nhận",
+                "shipping": "Đang giao",
+                "delivered": "Hoàn thành",
+                "cancelled": "Đã huỷ"
+                }
         }
     }
 }

@@ -1,5 +1,5 @@
 {
-    "AdminPage": {
+    "Admin": {
         "title": "Admin Dashboard",
         "subtitle": "Track business metrics and user-submitted product suggestions.",
         "stats": {
@@ -28,6 +28,78 @@
             "pagination": "Page {current}/{total}",
             "prev": "Previous",
             "next": "Next"
+        },
+        "users": {
+            "title": "User Management",
+            "subtitle": "View and manage all accounts in the system",
+            "refresh": "Refresh",
+
+            "stats": {
+            "total": "Total Users"
+            },
+
+            "search": {
+            "placeholder": "Search by name, email, or phone number..."
+            },
+
+            "filters": {
+            "all": "All",
+            "active": "Active",
+            "inactive": "Inactive",
+            "clear": "Clear Filter",
+            "found": "Found {total} results",
+            "user": "User",
+            "admin": "Admin"
+            },
+
+            "table": {
+            "headers": {
+                "user": "User",
+                "email": "Email",
+                "phone": "Phone Number",
+                "role": "Role",
+                "status": "Status",
+                "createdAt": "Created At"
+            },
+            "empty": "No users found.",
+            "loading": "Loading...",
+            "N/A": "N/A"
+            },
+
+            "actions": {
+            "title": "Actions",
+            "view": "View",
+            "delete": "Delete"
+            },
+
+            "deleteDialog": {
+            "title": "Delete User?",
+            "description": "Are you sure you want to delete {name}? This action cannot be undone.",
+            "cancel": "Cancel",
+            "confirm": "Delete",
+            "error": "Failed to delete user. Please try again."
+            },
+
+            "pagination": {
+            "showing": "Showing {from}–{to} of {total} results"
+            },
+
+            "error": {
+            "load": "Failed to load user list."
+            },
+
+            "roles": {
+                "ADMIN": "Admin",
+                "USER": "User"
+                },
+            
+            "orderStatus": {
+                "pending": "Pending",
+                "confirmed": "Confirmed",
+                "shipping": "Shipping",
+                "delivered": "Delivered",
+                "cancelled": "Cancelled"
+                }
         }
     }
 }
