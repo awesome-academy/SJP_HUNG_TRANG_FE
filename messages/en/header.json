@@ -6,7 +6,7 @@
             "about": "About",
             "products": "Products",
             "news": "News",
-            "map": "Map",
+            "map": "About us",
             "contact": "Contact"
         },
         "actions": {
@@ -17,9 +17,18 @@
             "signOut": "Sign Out",
             "profile": "Profile"
         },
+        "search": {
+            "placeholder": "Enter product name...",
+            "submit": "Search",
+            "close": "Close search"
+        },
         "locale": {
             "vi": "Tiếng Việt",
             "en": "English"
+        },
+        "loading": {
+            "loading": "Loading",
+            "please_wait": "Please wait a moment..."
         }
     }
 }

@@ -1,0 +1,9 @@
+{
+    "SearchPage": {
+        "title": "Product Search",
+        "placeholder": "Enter product name...",
+        "searchingFor": "Results for \"{keyword}\"",
+        "emptyQuery": "Enter a keyword to search products.",
+        "emptyResult": "No products match your search keyword."
+    }
+}

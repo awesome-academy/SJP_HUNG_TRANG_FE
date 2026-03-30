@@ -6,7 +6,7 @@
             "about": "Giới thiệu",
             "products": "Sản phẩm",
             "news": "Tin tức",
-            "map": "Bản đồ",
+            "map": "Về chúng tôi",
             "contact": "Liên hệ"
         },
         "actions": {
@@ -20,6 +20,10 @@
         "locale": {
             "vi": "Tiếng Việt",
             "en": "English"
+        },
+        "loading": {
+            "loading": "Đang tải",
+            "please_wait": "Vui lòng chờ một lát nhé..."
         }
     }
 }

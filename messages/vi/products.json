@@ -1,0 +1,17 @@
+{
+    "ProductsPage": {
+        "empty": "Không tìm thấy sản phẩm nào trong danh mục này.",
+        "filters": {
+            "title": "Danh mục sản phẩm",
+            "all": "Tất cả sản phẩm",
+            "toggle": "Mở đóng {name}"
+        },
+        "detail": {
+            "backToProducts": "← Quay lại danh sách sản phẩm",
+            "categoryLabel": "Danh mục",
+            "descriptionTitle": "Mô tả sản phẩm",
+            "categoryFallback": "Danh mục",
+            "stock": "Còn hàng: {count}"
+        }
+    }
+}

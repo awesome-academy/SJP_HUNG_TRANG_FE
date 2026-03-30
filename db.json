@@ -113,68 +113,217 @@
       "createdAt": "2026-03-27T10:58:59.264Z",
       "subscribe": true,
       "id": "jcRa-2W"
+    },
+    {
+      "email": "tnhworkmail@gmail.com",
+      "password": "Ngochung@2004",
+      "fullName": "Hung Tran",
+      "role": "USER",
+      "isActive": true,
+      "activateToken": "2e0f78bd-2dcc-415c-b97b-beed9c0385e4",
+      "activateTokenExpires": 1774862645560,
+      "createdAt": "2026-03-30T08:24:05.560Z",
+      "subscribe": false,
+      "id": "prwnR1-"
     }
   ],
   "categories": [
     {
-      "id": "1",
-      "name": "Electronics",
+      "id": 1,
+      "name": "Mỹ phẩm",
       "parentId": null
     },
     {
-      "id": "2",
-      "name": "Phones",
+      "id": 2,
+      "name": "Trang điểm",
       "parentId": 1
     },
     {
-      "id": "3",
-      "name": "iPhone",
+      "id": 3,
+      "name": "Son môi",
       "parentId": 2
     },
     {
-      "id": "4",
-      "name": "Samsung",
+      "id": 4,
+      "name": "Kem nền",
       "parentId": 2
     },
     {
-      "id": "5",
-      "name": "Laptops",
+      "id": 5,
+      "name": "Chăm sóc da",
       "parentId": 1
+    },
+    {
+      "id": 6,
+      "name": "Trang sức",
+      "parentId": null
+    },
+    {
+      "id": 7,
+      "name": "Dây chuyền",
+      "parentId": 6
+    },
+    {
+      "id": 8,
+      "name": "Bông tai",
+      "parentId": 6
+    },
+    {
+      "id": 9,
+      "name": "Phụ kiện",
+      "parentId": null
+    },
+    {
+      "id": 10,
+      "name": "Túi xách",
+      "parentId": 9
+    },
+    {
+      "id": 11,
+      "name": "Kẹp tóc",
+      "parentId": 9
+    },
+    {
+      "id": 12,
+      "name": "Nước hoa",
+      "parentId": null
+    },
+    {
+      "id": 13,
+      "name": "Nước hoa nữ",
+      "parentId": 12
     }
   ],
+
   "products": [
     {
-      "id": "1",
-      "name": "iPhone 15",
-      "description": "Latest Apple iPhone",
-      "price": 2000,
-      "stock": 10,
+      "id": 1,
+      "name": "Son lì Velvet Tint",
+      "description": "Son lì mềm mịn, lâu trôi, màu sắc tự nhiên",
+      "price": 250000,
+      "stock": 50,
       "categoryId": 3,
       "images": [
         {
           "id": 1,
-          "url": "/images/iphone-1.jpg",
+          "url": "/images/lipstick-1.jpg",
           "isMain": true,
           "sortOrder": 1
         },
         {
           "id": 2,
-          "url": "/images/iphone-2.jpg",
+          "url": "/images/lipstick-2.jpg",
           "sortOrder": 2
         }
       ]
     },
     {
-      "id": "2",
-      "name": "Samsung Galaxy S23",
-      "description": "Flagship Samsung phone",
-      "price": 1500,
-      "stock": 15,
+      "id": 2,
+      "name": "Kem nền Fit Skin",
+      "description": "Kem nền che phủ tốt, phù hợp mọi loại da",
+      "price": 320000,
+      "stock": 30,
       "categoryId": 4,
       "images": [
         {
           "id": 3,
-          "url": "/images/samsung-1.jpg",
+          "url": "/images/foundation-1.jpg",
+          "isMain": true,
+          "sortOrder": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Serum dưỡng ẩm HA",
+      "description": "Serum cấp ẩm sâu, giúp da căng bóng",
+      "price": 400000,
+      "stock": 25,
+      "categoryId": 5,
+      "images": [
+        {
+          "id": 4,
+          "url": "/images/serum-1.jpg",
+          "isMain": true,
+          "sortOrder": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dây chuyền bạc trái tim",
+      "description": "Thiết kế tinh tế, phù hợp làm quà tặng",
+      "price": 180000,
+      "stock": 40,
+      "categoryId": 7,
+      "images": [
+        {
+          "id": 5,
+          "url": "/images/necklace-1.jpg",
+          "isMain": true,
+          "sortOrder": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Bông tai ngọc trai",
+      "description": "Bông tai nhẹ nhàng, thanh lịch",
+      "price": 150000,
+      "stock": 60,
+      "categoryId": 8,
+      "images": [
+        {
+          "id": 6,
+          "url": "/images/earring-1.jpg",
+          "isMain": true,
+          "sortOrder": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Túi xách mini thời trang",
+      "description": "Túi nhỏ gọn, phù hợp đi chơi",
+      "price": 500000,
+      "stock": 20,
+      "categoryId": 10,
+      "images": [
+        {
+          "id": 7,
+          "url": "/images/bag-1.jpg",
+          "isMain": true,
+          "sortOrder": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Kẹp tóc nơ dễ thương",
+      "description": "Phụ kiện tóc xinh xắn cho nữ",
+      "price": 50000,
+      "stock": 100,
+      "categoryId": 11,
+      "images": [
+        {
+          "id": 8,
+          "url": "/images/hairclip-1.jpg",
+          "isMain": true,
+          "sortOrder": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Nước hoa Floral Dream",
+      "description": "Hương hoa nhẹ nhàng, nữ tính",
+      "price": 850000,
+      "stock": 15,
+      "categoryId": 13,
+      "images": [
+        {
+          "id": 9,
+          "url": "/images/perfume-1.jpg",
           "isMain": true,
           "sortOrder": 1
         }
