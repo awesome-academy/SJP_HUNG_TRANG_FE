@@ -91,15 +91,34 @@
             "roles": {
                 "ADMIN": "Admin",
                 "USER": "User"
-                },
-            
-            "orderStatus": {
-                "pending": "Pending",
-                "confirmed": "Confirmed",
-                "shipping": "Shipping",
-                "delivered": "Delivered",
-                "cancelled": "Cancelled"
                 }
+        },
+
+            "users_details": {
+                "title": "User Details",
+                "subtitle": "View and manage user information, orders, and reviews",
+
+                "noOrders": "No orders found.",
+                "noReviews": "No reviews found.",
+
+                "orderStatus": {
+                    "PENDING": "Pending",
+                    "CONFIRMED": "Confirmed",
+                    "SHIPPING": "Shipping",
+                    "DELIVERED": "Delivered",
+                    "CANCELLED": "Cancelled"
+                    },
+                "loding": "Loading user details...",
+                "error": "Failed to load user details.",
+                "goBack": "Go Back",
+                "email": "Email",
+                "phone": "Phone",
+                "address": "Address",
+                "userId": "User ID",
+                "createdAt": "Created At",
+                "orders": "Orders",
+                "reviews": "Reviews"
+
         }
     }
 }

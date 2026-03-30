@@ -91,15 +91,34 @@
             "roles": {
                 "ADMIN": "Admin",
                 "USER": "User"
-                },
-            
-            "orderStatus": {
-                "pending": "Chờ xác nhận",
-                "confirmed": "Đã xác nhận",
-                "shipping": "Đang giao",
-                "delivered": "Hoàn thành",
-                "cancelled": "Đã huỷ"
                 }
+        },
+
+         "users_details": {
+                "title": "Chi tiết người dùng",
+                "subtitle": "Xem và quản lý thông tin người dùng, đơn hàng và đánh giá",
+
+                "noOrders": "Không tìm thấy đơn hàng nào.",
+                "noReviews": "Không tìm thấy đánh giá nào.",
+
+                "orderStatus": {
+                    "PENDING": "Chờ xác nhận",
+                    "CONFIRMED": "Đã xác nhận",
+                    "SHIPPING": "Đang giao",
+                    "DELIVERED": "Hoàn thành",
+                    "CANCELLED": "Đã huỷ"
+                    },
+                "loading": "Đang tải...",
+                "error": "Không thể tải thông tin người dùng.",
+                "goBack": "Quay lại",
+                "email": "Email",
+                "phone": "Số điện thoại",
+                "address": "Địa chỉ",
+                "userId": "ID Người dùng",
+                "createdAt": "Ngày tạo",
+                "orders": "Đơn hàng",
+                "reviews": "Đánh giá"
+
         }
     }
 }

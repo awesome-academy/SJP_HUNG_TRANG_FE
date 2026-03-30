@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { ROLES } from "@/constants/role";
+import { OrderStatus } from "@/constants/order_status";
 
 export function StatusBadge({ isActive }: { isActive: boolean }) {
   const t = useTranslations("Admin.users");
