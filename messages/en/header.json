@@ -15,6 +15,11 @@
             "signOut": "Sign Out",
             "profile": "Profile"
         },
+        "search": {
+            "placeholder": "Enter product name...",
+            "submit": "Search",
+            "close": "Close search"
+        },
         "locale": {
             "vi": "Tiếng Việt",
             "en": "English"

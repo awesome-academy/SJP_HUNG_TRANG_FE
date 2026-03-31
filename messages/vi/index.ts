@@ -4,6 +4,7 @@ import header from './header.json'
 import auth from './auth.json'
 import about from './about.json'
 import contact from './contact.json'
+import products from './products.json'
 
 const messages = {
   ...home,
@@ -11,7 +12,8 @@ const messages = {
   ...header,
   ...auth,
   ...about,
-  ...contact
+  ...contact,
+  ...products
 }
 
 export default messages
