@@ -1,0 +1,302 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "user1@gmail.com",
+      "password": "123456",
+      "fullName": "Nguyen Van A",
+      "phone": "0123456789",
+      "address": "Ha Noi",
+      "role": "USER",
+      "isActive": true
+    },
+    {
+      "id": "2",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "fullName": "Admin",
+      "phone": "0999999999",
+      "address": "Ho Chi Minh",
+      "role": "ADMIN",
+      "isActive": true
+    },
+    {
+      "email": "trang123@gmail.com",
+      "password": "123456",
+      "fullName": "Nguyen Thu Trang",
+      "role": "USER",
+      "isActive": true,
+      "createdAt": "2026-03-25T03:21:04.639Z",
+      "subscribe": true,
+      "id": "GU90Fah"
+    },
+    {
+      "email": "nguyen123@gmail.com",
+      "password": "123456",
+      "fullName": "Nguyen Nguyen",
+      "role": "USER",
+      "isActive": false,
+      "activateToken": "e924f683-2932-40e0-abaa-40b1bca7c3ed",
+      "activateTokenExpires": 1774425097325,
+      "createdAt": "2026-03-25T06:51:37.325Z",
+      "subscribe": true,
+      "id": "wAe2VJq"
+    },
+    {
+      "email": "nguyen456@gmail.com",
+      "password": "123456",
+      "fullName": "Nguyen Nguyen",
+      "role": "USER",
+      "isActive": true,
+      "activateToken": null,
+      "activateTokenExpires": null,
+      "createdAt": "2026-03-25T06:56:26.677Z",
+      "subscribe": true,
+      "id": "sAWjdWw"
+    },
+    {
+      "email": "nguyen789@gmail.com",
+      "password": "123456",
+      "fullName": "n n",
+      "role": "USER",
+      "isActive": true,
+      "activateToken": null,
+      "activateTokenExpires": null,
+      "createdAt": "2026-03-25T06:59:04.347Z",
+      "subscribe": true,
+      "id": "kHgczMN"
+    },
+    {
+      "email": "trang456@gmail.com",
+      "password": "123456",
+      "fullName": "t t",
+      "role": "USER",
+      "isActive": false,
+      "activateToken": "c6a3fe95-8d43-4de6-ad54-e2d2d3741eb2",
+      "activateTokenExpires": 1774426835452,
+      "createdAt": "2026-03-25T07:20:35.452Z",
+      "subscribe": true,
+      "id": "Ire5qXb"
+    },
+    {
+      "email": "hehe123@gmail.com",
+      "password": "123456",
+      "fullName": "h h",
+      "role": "USER",
+      "isActive": true,
+      "activateToken": null,
+      "activateTokenExpires": null,
+      "createdAt": "2026-03-27T10:24:01.525Z",
+      "subscribe": false,
+      "id": "ZAU42s8"
+    },
+    {
+      "email": "hehe456@gmail.com",
+      "password": "123456",
+      "fullName": "e e",
+      "role": "USER",
+      "isActive": true,
+      "activateToken": null,
+      "activateTokenExpires": null,
+      "createdAt": "2026-03-27T10:57:18.885Z",
+      "subscribe": true,
+      "id": "AJ1nziQ"
+    },
+    {
+      "email": "hehe789@gmail.com",
+      "password": "123456",
+      "fullName": "e e",
+      "role": "USER",
+      "isActive": true,
+      "activateToken": null,
+      "activateTokenExpires": null,
+      "createdAt": "2026-03-27T10:58:59.264Z",
+      "subscribe": true,
+      "id": "jcRa-2W"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electronics",
+      "parentId": null
+    },
+    {
+      "id": "2",
+      "name": "Phones",
+      "parentId": 1
+    },
+    {
+      "id": "3",
+      "name": "iPhone",
+      "parentId": 2
+    },
+    {
+      "id": "4",
+      "name": "Samsung",
+      "parentId": 2
+    },
+    {
+      "id": "5",
+      "name": "Laptops",
+      "parentId": 1
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "iPhone 15",
+      "description": "Latest Apple iPhone",
+      "price": 2000,
+      "stock": 10,
+      "categoryId": 3,
+      "images": [
+        {
+          "id": 1,
+          "url": "/images/iphone-1.jpg",
+          "isMain": true,
+          "sortOrder": 1
+        },
+        {
+          "id": 2,
+          "url": "/images/iphone-2.jpg",
+          "sortOrder": 2
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S23",
+      "description": "Flagship Samsung phone",
+      "price": 1500,
+      "stock": 15,
+      "categoryId": 4,
+      "images": [
+        {
+          "id": 3,
+          "url": "/images/samsung-1.jpg",
+          "isMain": true,
+          "sortOrder": 1
+        }
+      ]
+    }
+  ],
+  "carts": [
+    {
+      "id": "1",
+      "userId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": 1,
+      "status": "PENDING",
+      "totalPrice": 4000,
+      "fullName": "Nguyen Van A",
+      "phone": "0123456789",
+      "address": "Ha Noi",
+      "note": "",
+      "voucherCode": "SALE10",
+      "createdAt": "2026-03-20T10:00:00Z",
+      "items": [
+        {
+          "productId": 1,
+          "productName": "iPhone 15",
+          "price": 2000,
+          "quantity": 2
+        }
+      ]
+    }
+  ],
+  "vouchers": [
+    {
+      "id": "1",
+      "code": "SALE10",
+      "discountPercent": 10,
+      "minOrderValue": 1000,
+      "expiredAt": "2026-12-31T00:00:00Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "userId": 1,
+      "productId": 1,
+      "rating": 5,
+      "comment": "Very good product",
+      "createdAt": "2026-03-20T12:00:00Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "userId": 1,
+      "productId": 1,
+      "content": "Is this original?",
+      "createdAt": "2026-03-20T11:00:00Z"
+    }
+  ],
+  "emailSubscriptions": [
+    {
+      "id": "1",
+      "email": "user1@gmail.com"
+    },
+    {
+      "email": "trang123@gmail.com",
+      "id": "4GTpWuLxa4o"
+    },
+    {
+      "email": "trang123@gmail.com",
+      "id": "QB7Ni24"
+    },
+    {
+      "email": "nguyen123@gmail.com",
+      "id": "X0YGhgS"
+    },
+    {
+      "email": "nguyen456@gmail.com",
+      "id": "xGpVE7v"
+    },
+    {
+      "email": "nguyen789@gmail.com",
+      "id": "dbs3l6c"
+    },
+    {
+      "email": "trang456@gmail.com",
+      "id": "7tu32Js"
+    },
+    {
+      "email": "hehe456@gmail.com",
+      "id": "7fZrC_V"
+    },
+    {
+      "email": "hehe789@gmail.com",
+      "id": "HFiKGa1"
+    }
+  ],
+  "productSuggestions": [
+    {
+      "id": "1",
+      "productName": "Macbook Pro M3",
+      "description": "Please add this product",
+      "photos": [
+        {
+          "id": 1,
+          "url": "/images/suggestion-1.jpg"
+        },
+        {
+          "id": 2,
+          "url": "/images/suggestion-2.jpg"
+        }
+      ]
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
