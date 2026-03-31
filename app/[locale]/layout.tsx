@@ -6,7 +6,7 @@ import Footer from '@/components/layout/Footer';
  
 type Props = {
   children: React.ReactNode;
-  params: Promise<{locale: "en" | "vi"}>;
+  params: Promise<{locale: string}>;
 };
  
 export default async function LocaleLayout({children, params}: Props) {
