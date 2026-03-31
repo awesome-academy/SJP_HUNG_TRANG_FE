@@ -1,5 +1,68 @@
 {
     "HomePage": {
-        "title": "Xin chào thế giới!"
+        "hero": {
+            "alt": "Hình nền hero",
+            "title": {
+            "line1": "Vẻ đẹp",
+            "line2": "thuần khiết",
+            "line3": "của bạn"
+            },
+            "description": "Khám phá bộ sưu tập mỹ phẩm, trang sức & nước hoa được chọn lọc tinh tế — nâng tầm vẻ đẹp tự nhiên của bạn mỗi ngày.",
+            "cta": "Khám phá ngay"
+        },
+
+        "featuredCategories": {
+            "header": "Danh mục",
+            "subheader": "Khám phá thế giới của bạn",
+            "viewAll": "Tất cả danh mục",
+            "viewDetails": "Xem thêm"
+        },
+
+        "newArrivals": {
+            "header": "Sản phẩm mới",
+            "addToCart": "Thêm nhanh vào giỏ",
+            "addedToCart": "Đã thêm!",
+            "viewAll": "Xem toàn bộ sản phẩm"
+        },
+        "brandValues": {
+            "subtitle": "Giá trị thương hiệu",
+            "title": "Vì sao chọn chúng tôi?",
+            "items": {
+                "natural": {
+                    "label": "Thành phần tự nhiên",
+                    "desc": "100% hữu cơ, chiết xuất thực vật thuần khiết, an toàn tuyệt đối cho mọi loại da."
+                },
+                "design": {
+                    "label": "Thiết kế độc bản",
+                    "desc": "Mỗi món đồ là một câu chuyện riêng — được chế tác thủ công bởi các nghệ nhân."
+                },
+                "delivery": {
+                    "label": "Giao nhận tinh tế",
+                    "desc": "Đóng gói bền vững thân thiện môi trường, giao hàng toàn quốc trong 24–48 giờ."
+                },
+                "quality": {
+                    "label": "Cam kết chất lượng",
+                    "desc": "Đổi trả 30 ngày, hỗ trợ 24/7. Sự hài lòng của bạn là ưu tiên số một."
+                }
+            }
+        },
+
+        "lookbook": {
+            "header": "Lookbook",
+            "subheader": "Cảm hứng phong cách"
+        },
+
+        "newsletter": {
+            "subtitle": "Newsletter",
+            "header": "Gia nhập cộng đồng",
+            "headerHighlight": "sống xanh & tinh tế",
+            "description": "Nhận ngay mã giảm giá 10% cho đơn hàng đầu tiên, cùng tin tức về bộ sưu tập mới và ưu đãi độc quyền.",
+            "cta": "Đăng ký ngay",
+            "perks": {
+                "exclusive-offers": "Ưu đãi độc quyền",
+                "new-arrivals": "Bộ sưu tập mới",
+                "beauty-tips": "Mẹo làm đẹp"
+            }
+        }
     }
 }

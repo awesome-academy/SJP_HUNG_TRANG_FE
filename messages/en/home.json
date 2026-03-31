@@ -1,5 +1,68 @@
 {
     "HomePage": {
-        "title": "Hello world!"
+        "hero": {
+            "alt": "Hero background",
+            "title": {
+            "line1": "Natural Beauty",
+            "line2": "Pure & Simple",
+            "line3": "That's You"
+            },
+            "description": "Discover our curated collection of cosmetics, jewelry, and fragrances — elevating your natural beauty every day.",
+            "cta": "Discover Now"
+        },
+
+        "featuredCategories": {
+            "header": "Featured Categories",
+            "subheader": "Explore Your World",
+            "viewAll": "View All Categories",
+            "viewDetails": "View Details"
+        },
+
+        "newArrivals": {
+            "header": "New Arrivals",
+            "addToCart": "Add to Cart Quickly",
+            "addedToCart": "Added!",
+            "viewAll": "View All Products"
+        },
+        "brandValues": {
+            "subtitle": "Brand Values",
+            "title": "Why Choose Us?",
+            "items": {
+                "natural": {
+                    "label": "Natural Ingredients",
+                    "desc": "100% organic, pure plant extracts, absolutely safe for all skin types."
+                },
+                "design": {
+                    "label": "Unique Design",
+                    "desc": "Each piece is a unique story — crafted by hand by skilled artisans."
+                },
+                "delivery": {
+                    "label": "Thoughtful Delivery",
+                    "desc": "Sustainable packaging, eco-friendly, with nationwide delivery in 24–48 hours."
+                },
+                "quality": {
+                    "label": "Quality Commitment",
+                    "desc": "30-day return policy, 24/7 customer support. Your satisfaction is our top priority."
+                }
+            }
+        },
+
+        "lookbook": {
+            "header": "Lookbook",
+            "subheader": "Style Inspiration"
+        },
+
+        "newsletter": {
+            "subtitle": "Newsletter",
+            "header": "Join Our Community",
+            "headerHighlight": "live green & elegant",
+            "description": "Get immediate access to a 10% discount on your first order, along with the latest news about new collections and exclusive offers.",
+            "cta": "Subscribe Now",
+            "perks": {
+                "exclusive-offers": "Exclusive Offers",
+                "new-arrivals": "New Arrivals",
+                "beauty-tips": "Beauty Tips"
+            }
+        }
     }
 }
