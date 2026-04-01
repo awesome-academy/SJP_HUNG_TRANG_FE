@@ -226,6 +226,26 @@
           "url": "/images/lipstick-2.jpg",
           "sortOrder": 2
         }
+      ],
+      "variants": [
+        {
+          "id": 1,
+          "color": "Đỏ",
+          "size": "S",
+          "stock": 10
+        },
+        {
+          "id": 2,
+          "color": "Đỏ",
+          "size": "M",
+          "stock": 5
+        },
+        {
+          "id": 3,
+          "color": "Cam",
+          "size": "S",
+          "stock": 8
+        }
       ]
     },
     {
@@ -401,6 +421,55 @@
       "productId": 1,
       "content": "Is this original?",
       "createdAt": "2026-03-20T11:00:00Z"
+    },
+    {
+      "userId": 1,
+      "productId": 1,
+      "content": "dd",
+      "createdAt": "2026-04-01T03:45:55.001Z",
+      "id": "QziJedp"
+    },
+    {
+      "userId": "ZAU42s8",
+      "productId": 2,
+      "content": "alo alo",
+      "createdAt": "2026-04-01T03:52:23.986Z",
+      "id": "H5PXwX0"
+    },
+    {
+      "userId": "ZAU42s8",
+      "productId": 1,
+      "content": "XD",
+      "createdAt": "2026-04-01T03:52:58.865Z",
+      "id": "TT1JRqi"
+    },
+    {
+      "productId": 8,
+      "content": "ttt",
+      "createdAt": "2026-04-01T03:57:37.474Z",
+      "userId": "ZAU42s8",
+      "id": "IQ52aI_"
+    },
+    {
+      "productId": 1,
+      "content": "alo ",
+      "createdAt": "2026-04-01T04:30:43.202Z",
+      "userId": "adSYfjm",
+      "id": "Difs4QP"
+    },
+    {
+      "productId": 1,
+      "content": "alo vũ à",
+      "createdAt": "2026-04-01T04:30:51.416Z",
+      "userId": "adSYfjm",
+      "id": "WcL-LNs"
+    },
+    {
+      "productId": "2",
+      "content": "vv",
+      "createdAt": "2026-04-01T09:47:12.515Z",
+      "userId": "GU90Fah",
+      "id": "XNTaTjB"
     }
   ],
   "emailSubscriptions": [

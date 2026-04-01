@@ -6,6 +6,7 @@ import about from './about.json'
 import contact from './contact.json'
 import products from './products.json'
 import search from './search.json'
+import product_details from './product_details.json'
 
 const messages = {
   ...home,
@@ -15,7 +16,8 @@ const messages = {
   ...about,
   ...contact,
   ...products,
-  ...search
+  ...search,
+  ...product_details,
 }
 
 export default messages
