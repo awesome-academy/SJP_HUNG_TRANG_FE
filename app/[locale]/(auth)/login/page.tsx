@@ -38,8 +38,9 @@ export default function LoginPage() {
 
     if (res?.ok) {
       const cleanPath = callbackUrl.replace(new RegExp(`^/${locale}`), "") || ROUTES.HOME;
-    
-      router.push(cleanPath);
+
+      router.replace(cleanPath);
+      router.refresh();
       toast.success(t("success"))
     }
   }

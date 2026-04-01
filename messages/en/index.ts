@@ -8,6 +8,7 @@ import products from './products.json'
 import search from './search.json'
 import product_details from './product_details.json'
 import cart from './cart.json'
+import admin from './admin.json'
 
 const messages = {
   ...home,
@@ -19,7 +20,8 @@ const messages = {
   ...products,
   ...search,
   ...product_details,
-  ...cart
+  ...cart,
+  ...admin
 }
 
 export default messages

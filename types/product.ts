@@ -15,11 +15,11 @@ export type Variant = {
 export type Product = {
   id: string;
   name: string;
-  description: string;
+  description?: string;
   price: number;
   stock: number;
-  categoryId: string;
-  images: ProductImage[];
+  categoryId?: string;
+  images?: ProductImage[];
   variants?: Variant[];
 }
 
@@ -29,4 +29,11 @@ export type SideProduct = {
   price: number;
   rating: number;
   reviews: number;
+}
+
+export type ProductSuggestion = {
+    id: string
+    productName: string
+    description?: string
+    photos?: Array<{ id: string | number; url: string }>
 }

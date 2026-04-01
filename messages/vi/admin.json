@@ -1,0 +1,33 @@
+{
+    "AdminPage": {
+        "title": "Admin Dashboard",
+        "subtitle": "Theo dõi số liệu kinh doanh và các sản phẩm người dùng đề xuất.",
+        "stats": {
+            "totalProducts": "Tổng sản phẩm",
+            "totalStock": "Tồn kho tổng: {count} sản phẩm",
+            "orders": "Đơn hàng",
+            "pendingOrders": "Đang chờ xử lý: {count} đơn",
+            "revenue": "Doanh thu",
+            "avgOrderValue": "Giá trị trung bình/đơn: {value}",
+            "customers": "Khách hàng",
+            "customersMeta": "Hoạt động: {active} | Đề xuất: {suggestions}"
+        },
+        "highlights": {
+            "title": "Sản phẩm cần quan tâm",
+            "description": "Các chỉ số vận hành nhanh",
+            "lowStock": "Sản phẩm tồn kho thấp (<= 5)",
+            "totalSuggestions": "Tổng đề xuất từ người dùng",
+            "pendingRate": "Tỉ lệ đơn đang chờ"
+        },
+        "suggestions": {
+            "title": "Danh mục đề xuất",
+            "description": "Ảnh đính kèm từ người dùng",
+            "empty": "Chưa có đề xuất nào.",
+            "noDescription": "Không có mô tả",
+            "photos": "Ảnh đính kèm: {count}",
+            "pagination": "Trang {current}/{total}",
+            "prev": "Trước",
+            "next": "Sau"
+        }
+    }
+}

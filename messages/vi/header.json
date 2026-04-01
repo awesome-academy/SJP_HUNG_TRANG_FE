@@ -5,7 +5,12 @@
             "home": "Trang chủ",
             "about": "Giới thiệu",
             "products": "Sản phẩm",
-            "contact": "Liên hệ"
+            "contact": "Liên hệ",
+            "adminDashboard": "Bảng điều khiển",
+            "adminProducts": "Quản lý sản phẩm",
+            "adminCategories": "Quản lý danh mục",
+            "adminOrders": "Quản lý đơn hàng",
+            "adminUsers": "Quản lý người dùng"
         },
         "actions": {
             "cart": "Giỏ hàng",
