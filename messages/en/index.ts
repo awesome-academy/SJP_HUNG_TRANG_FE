@@ -5,6 +5,7 @@ import auth from './auth.json'
 import about from './about.json'
 import contact from './contact.json'
 import products from './products.json'
+import search from './search.json'
 
 const messages = {
   ...home,
@@ -13,7 +14,8 @@ const messages = {
   ...auth,
   ...about,
   ...contact,
-  ...products
+  ...products,
+  ...search
 }
 
 export default messages
