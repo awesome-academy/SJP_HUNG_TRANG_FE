@@ -122,6 +122,57 @@
                 "voucher": "Mã giảm giá",
                 "productId": "Sản phẩm"
 
+        },
+
+        "categories": {
+            "title": "Quản lý danh mục",
+            "subtitle": "Xem và quản lý các danh mục sản phẩm trong hệ thống",
+            "add_category": "Thêm Danh Mục",
+            "total_categories": "Tổng Số Danh Mục",
+            "root_categories": "Danh Mục Gốc",
+            "max_depth": "Độ Sâu Tối Đa",
+            "all_levels": "Tất cả cấp",
+            "top_level": "Cấp cao nhất",
+            "levels": "cấp",
+            "category_tree": "Cây danh mục",
+            "search_categories": "Tìm kiếm danh mục...",
+            "level_1": "Cấp 1",
+            "level_2": "Cấp 2",
+            "level_3": "Cấp 3",
+            "level_4_plus": "Cấp 4+",
+            "legend_desc": "Di chuột vào hàng để thấy thao tác",
+            "loading_categories": "Đang tải...",
+            "no_categories_found": "Không tìm thấy danh mục nào cho",
+            "refresh": "Làm mới",
+            "description": "Quản lý cấu trúc phân cấp của các danh mục sản phẩm.",
+            "summary": {
+                "filtered": "Hiển thị {filtered} / {total} danh mục",
+                "all": "{total} danh mục · {root} gốc · sâu nhất {depth} cấp"
+            },
+
+            "form": {
+                "name": "Tên danh mục",
+                "placeholder": "VD: Son môi, Túi xách...",
+                "parent": "Danh mục cha",
+                "parent_hint": "Để trống nếu đây là danh mục gốc",
+                "root_category": "Danh mục gốc (không có cha)",
+                "path_preview": "Xem trước đường dẫn",
+                "cancel": "Huỷ",
+                "save_changes": "Lưu thay đổi",
+                "add_category": "Thêm danh mục",
+                "saving": "Đang lưu...",
+                "edit_category": "Chỉnh sửa danh mục"
+            },
+
+            "tree": {
+                "delete_confirm_full": "Xoá danh mục \"{name}\" và {count} danh mục con",
+                "delete_confirm_no_child": "Xoá danh mục \"{name}\"",
+                "and_its_descendants": "và các danh mục con",
+                "cancel": "Huỷ",
+                "confirm_delete": "Xoá",
+                "children": "con",
+                "no_categories_found": "Không tìm thấy danh mục nào."
+            }
         }
     }
 }
