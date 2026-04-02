@@ -23,6 +23,10 @@
         "locale": {
             "vi": "Tiếng Việt",
             "en": "English"
+        },
+        "loading": {
+            "loading": "Loading",
+            "please_wait": "Please wait a moment..."
         }
     }
 }
