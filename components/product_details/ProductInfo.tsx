@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { Minus, Plus, Share2, Truck, RotateCcw, Shield } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { Product } from "@/types/product";
 import { formatPriceVnd } from "@/lib/mock-db";
 import { useTranslations } from "next-intl";
+import AddToCartButton from "@/components/products/AddToCartButton";
 import { socialButtons } from "./ui";
 
 interface ProductInfoProps {
@@ -173,12 +173,26 @@ export default function ProductInfo({ product, locale }: ProductInfoProps) {
             </button>
           </div>
 
-          <Button
+          <AddToCartButton
+            product={product}
             disabled={!canAddToCart}
-            className="flex-1 bg-green-600 hover:bg-green-700 text-white font-semibold h-10 rounded cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {canAddToCart ? t("addToCart") : t("outOfStock")}
-          </Button>
+            quantity={quantity}
+            variant={
+              selectedVariant
+                ? {
+                    id: selectedVariant.id,
+                    color: selectedVariant.color,
+                    size: selectedVariant.size,
+                    stock: selectedVariant.stock,
+                  }
+                : undefined
+            }
+            className="flex-1 h-10 bg-green-600 hover:bg-green-700 text-white font-semibold rounded cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+            labels={{
+              add: t("addToCart"),
+              outOfStock: t("outOfStock"),
+            }}
+          />
 
           <button className="w-10 h-10 rounded border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition-colors text-gray-500 cursor-pointer">
             <Share2 className="w-4 h-4" />

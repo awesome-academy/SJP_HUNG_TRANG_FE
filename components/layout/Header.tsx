@@ -3,7 +3,7 @@ import { ChevronDown, Menu, Search, ShoppingCart } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -57,10 +57,18 @@ export default async function Header({ locale }: HeaderProps) {
 				</nav>
 
 				<div className="ml-auto hidden items-center gap-2 lg:flex">
-					<Button variant="ghost" size="icon" className="text-zinc-900 hover:bg-zinc-100 hover:text-zinc-900">
+					<Link
+						href="/cart"
+						locale={locale}
+						className={buttonVariants({
+							variant: "ghost",
+							size: "icon",
+							className: "text-zinc-900 hover:bg-zinc-100 hover:text-zinc-900",
+						})}
+					>
 						<ShoppingCart className="h-5 w-5" />
 						<span className="sr-only">{t("actions.cart")}</span>
-					</Button>
+					</Link>
 					<Link
 						href="/search"
 						locale={locale}

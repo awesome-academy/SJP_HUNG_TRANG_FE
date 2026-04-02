@@ -21,6 +21,15 @@
       "isActive": true
     },
     {
+      "id": "admin-local-01",
+      "email": "admin2@gmail.com",
+      "password": "admin123",
+      "fullName": "Admin Local",
+      "role": "ADMIN",
+      "isActive": true,
+      "createdAt": "2026-03-30T09:00:00.000Z"
+    },
+    {
       "email": "trang123@gmail.com",
       "password": "123456",
       "fullName": "Nguyen Thu Trang",
@@ -470,6 +479,13 @@
       "createdAt": "2026-04-01T09:47:12.515Z",
       "userId": "GU90Fah",
       "id": "XNTaTjB"
+    },
+    {
+      "productId": "1",
+      "content": "xấu",
+      "createdAt": "2026-04-02T03:51:45.237Z",
+      "userId": "zJ6VMjU",
+      "id": "bogHviP"
     }
   ],
   "emailSubscriptions": [
@@ -583,6 +599,16 @@
       "description": "aa",
       "photos": [],
       "id": "7QN870_"
+    },
+    {
+      "productName": "Macbook M100",
+      "description": "Hehehehehe",
+      "photos": [
+        {
+          "url": "/uploads/suggested-products/1775097831831-Postcard.png"
+        }
+      ],
+      "id": "cXEoAW7"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
