@@ -1,0 +1,74 @@
+{
+    "ProfilePage": {
+        "title": "Profile",
+        "subtitle": "Manage your account",
+        "tabs": {
+            "profile": "View / Edit personal information",
+            "orders": "Order management",
+            "reviews": "Product reviews and feedback"
+        },
+        "profileSection": {
+            "heading": "Personal information",
+            "description": "You can view and edit your basic details here.",
+            "name": "Full name",
+            "email": "Email",
+            "phone": "Phone number",
+            "address": "Address",
+            "notProvided": "Not provided",
+            "edit": "Edit",
+            "save": "Save changes",
+            "cancel": "Cancel",
+            "signOut": "Sign out",
+            "saved": "Changes saved.",
+            "saveFailed": "Failed to save profile. Please try again.",
+            "loadFailed": "Failed to load profile from server."
+        },
+        "ordersSection": {
+            "heading": "Your orders",
+            "description": "Click an order to see delivery details and ordered items.",
+            "loading": "Loading your orders...",
+            "fetchFailed": "Cannot load orders right now. Please try again.",
+            "retry": "Try again",
+            "empty": "You have not placed any orders yet.",
+            "selectOrderHint": "Select an order from the left list to view details.",
+            "id": "Order ID",
+            "status": "Status",
+            "date": "Created at",
+            "total": "Total",
+            "shippingInfo": "Shipping information",
+            "address": "Address",
+            "phone": "Phone",
+            "note": "Note",
+            "voucher": "Voucher",
+            "items": "Ordered items",
+            "variant": "Variant",
+            "color": "Color",
+            "size": "Size",
+            "quantity": "Qty",
+            "unitPrice": "Unit price",
+            "lineTotal": "Line total",
+            "review": {
+                "action": "Review product",
+                "reviewed": "Reviewed",
+                "modalTitle": "Review this product",
+                "rating": "Rating",
+                "comment": "Comment",
+                "commentPlaceholder": "Share your experience with this product...",
+                "cancel": "Cancel",
+                "submit": "Submit review",
+                "submitting": "Submitting...",
+                "success": "Your review has been saved.",
+                "alreadyRated": "You have already reviewed this item for this purchase.",
+                "error": "Failed to submit review. Please try again."
+            }
+        },
+        "comingSoon": {
+            "title": "Feature in progress",
+            "description": "This section will be completed in the next step."
+        },
+        "auth": {
+            "required": "Please sign in to access your profile.",
+            "goToLogin": "Go to sign in"
+        }
+    }
+}

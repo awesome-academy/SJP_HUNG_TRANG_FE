@@ -24,10 +24,12 @@
       "id": "admin-local-01",
       "email": "admin2@gmail.com",
       "password": "admin123",
-      "fullName": "Admin Local",
+      "fullName": "Admin Local 2",
       "role": "ADMIN",
+      "phone": "0704184398",
       "isActive": true,
-      "createdAt": "2026-03-30T09:00:00.000Z"
+      "createdAt": "2026-03-30T09:00:00.000Z",
+      "address": "hihi"
     },
     {
       "email": "trang123@gmail.com",
@@ -380,6 +382,20 @@
           "quantity": 2
         }
       ]
+    },
+    {
+      "id": "2",
+      "userId": "admin-local-01",
+      "items": [
+        {
+          "productId": 2,
+          "quantity": 2
+        },
+        {
+          "productId": 3,
+          "quantity": 2
+        }
+      ]
     }
   ],
   "orders": [
@@ -402,6 +418,84 @@
           "quantity": 2
         }
       ]
+    },
+    {
+      "id": "2",
+      "userId": "admin-local-01",
+      "status": "PENDING",
+      "totalPrice": 7000,
+      "fullName": "Nguyen Van A",
+      "phone": "0123456789",
+      "address": "Ha Noi",
+      "note": "",
+      "voucherCode": "SALE10",
+      "createdAt": "2026-03-20T10:00:00Z",
+      "items": [
+        {
+          "productId": 2,
+          "productName": "Kem nền Fit Skin",
+          "price": 2000,
+          "quantity": 2
+        },
+        {
+          "productId": 3,
+          "productName": "Serum dưỡng ẩm HA",
+          "price": 3000,
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "userId": "admin-local-01",
+      "status": "SHIPPING",
+      "totalPrice": 100000,
+      "fullName": "Nguyen Van A",
+      "phone": "0123456789",
+      "address": "Ha Noi",
+      "note": "",
+      "voucherCode": "SALE10",
+      "createdAt": "2026-03-20T10:00:00Z",
+      "items": [
+        {
+          "productId": 2,
+          "productName": "Kem nền Fit Skin",
+          "price": 20000,
+          "quantity": 2
+        },
+        {
+          "productId": 3,
+          "productName": "Serum dưỡng ẩm HA",
+          "price": 30000,
+          "quantity": 2
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "userId": "admin-local-01",
+      "status": "DELIVERED",
+      "totalPrice": 100000,
+      "fullName": "Nguyen Van A",
+      "phone": "0123456789",
+      "address": "Ha Noi",
+      "note": "",
+      "voucherCode": "SALE10",
+      "createdAt": "2026-03-20T10:00:00Z",
+      "items": [
+        {
+          "productId": 2,
+          "productName": "Kem nền Fit Skin",
+          "price": 20000,
+          "quantity": 2
+        },
+        {
+          "productId": 3,
+          "productName": "Serum dưỡng ẩm HA",
+          "price": 30000,
+          "quantity": 2
+        }
+      ]
     }
   ],
   "vouchers": [
@@ -415,12 +509,24 @@
   ],
   "reviews": [
     {
-      "id": "1",
-      "userId": 1,
-      "productId": 1,
+      "userId": "admin-local-01",
+      "orderId": "4",
+      "productId": "2",
       "rating": 5,
-      "comment": "Very good product",
-      "createdAt": "2026-03-20T12:00:00Z"
+      "comment": "Rất tuyệt vời",
+      "variantSignature": "default",
+      "createdAt": "2026-04-03T03:57:34.913Z",
+      "id": 1
+    },
+    {
+      "userId": "admin-local-01",
+      "orderId": "4",
+      "productId": "3",
+      "rating": 3,
+      "comment": "Tệ lắm k mua",
+      "variantSignature": "default",
+      "createdAt": "2026-04-03T03:57:44.064Z",
+      "id": 2
     }
   ],
   "comments": [

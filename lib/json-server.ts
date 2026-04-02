@@ -1,24 +1,47 @@
-const baseUrl = process.env.JSON_SERVER_URL;
-if (!baseUrl) {
-  throw new Error("JSON_SERVER_URL environment variable must be set");
+const BASE = process.env.JSON_SERVER_URL;
+
+function isAbsoluteHttpUrl(path: string): boolean {
+  return path.startsWith("http://") || path.startsWith("https://");
 }
-const BASE = baseUrl;
+
+function withQuery(path: string, params?: Record<string, string>): string {
+  if (!params) return path;
+
+  const query = new URLSearchParams(params).toString();
+  if (!query) return path;
+
+  return `${path}${path.includes("?") ? "&" : "?"}${query}`;
+}
+
+function resolvePath(path: string): string {
+  if (isAbsoluteHttpUrl(path)) {
+    return path;
+  }
+
+  if (path.startsWith("/")) {
+    // In server context we target JSON server; in client context keep relative API path.
+    return BASE ? `${BASE}${path}` : path;
+  }
+
+  if (!BASE) {
+    throw new Error("JSON_SERVER_URL environment variable must be set");
+  }
+
+  return `${BASE}/${path}`;
+}
 
 export async function apiGet<T>(
   path: string,
   params?: Record<string, string>
 ): Promise<T> {
-  const url = new URL(`${BASE}${path}`);
-  if (params) {
-    Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
-  }
-  const res = await fetch(url.toString(), { cache: "no-store" });
+  const url = withQuery(resolvePath(path), params);
+  const res = await fetch(url, { cache: "no-store" });
   if (!res.ok) throw new Error(`GET ${path} failed: ${res.status}`);
   return res.json();
 }
 
 export async function apiPost<T>(path: string, body: unknown): Promise<T> {
-  const res = await fetch(`${BASE}${path}`, {
+  const res = await fetch(resolvePath(path), {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
@@ -29,7 +52,7 @@ export async function apiPost<T>(path: string, body: unknown): Promise<T> {
 }
 
 export async function apiPut<T>(path: string, body: unknown): Promise<T> {
-  const res = await fetch(`${BASE}${path}`, {
+  const res = await fetch(resolvePath(path), {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
@@ -40,7 +63,7 @@ export async function apiPut<T>(path: string, body: unknown): Promise<T> {
 }
 
 export async function apiDelete(path: string): Promise<void> {
-  const res = await fetch(`${BASE}${path}`, {
+  const res = await fetch(resolvePath(path), {
     method: "DELETE",
     cache: "no-store",
   });
