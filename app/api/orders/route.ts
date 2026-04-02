@@ -1,4 +1,27 @@
-import { NextResponse } from "next/server";
+import { NextResponse } from "next/server"
+import { getServerSession } from "next-auth"
+
+import { authOptions } from "@/lib/auth"
+import { apiGet } from "@/lib/json-server"
+import { mapRawOrdersToOrders } from "@/lib/order-normalizer"
+import type { RawOrder } from "@/types/order"
+
+export async function GET() {
+  try {
+    const session = await getServerSession(authOptions)
+
+    if (!session?.user?.id) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
+    }
+
+    const orders = await apiGet<RawOrder[]>("/orders", { userId: session.user.id })
+    const normalizedOrders = mapRawOrdersToOrders(orders)
+
+    return NextResponse.json(normalizedOrders, { status: 200 })
+  } catch (error) {
+    return NextResponse.json({ error: String(error) }, { status: 500 })
+  }
+}
 
 const BASE_URL = process.env.JSON_SERVER_URL;
 
@@ -17,22 +40,37 @@ export async function POST(req: Request) {
       );
     }
 
+    const shipping = orderData.shipping ?? orderData.shippingAddress ?? {};
+
+    const normalizedItems = Array.isArray(orderData.items)
+      ? orderData.items.map((item: any) => ({
+          ...item,
+          productName: typeof item.productName === "string" ? item.productName.trim() : "",
+        }))
+      : [];
+
+    if (normalizedItems.some((item: { productName: string }) => !item.productName)) {
+      return NextResponse.json(
+        { message: "Each order item must include a non-empty productName" },
+        { status: 400 },
+      );
+    }
+
     const normalizedOrder = {
       // Preserve any existing fields on the incoming payload
       ...orderData,
       // Ensure root-level fields expected by the schema exist
       fullName:
-        orderData.fullName ?? orderData.name ?? orderData.customerName ?? "",
-      phone: orderData.phone ?? orderData.contactPhone ?? "",
-      address: orderData.address ?? orderData.shippingAddress ?? "",
-      note: orderData.note ?? orderData.notes ?? "",
+        orderData.fullName ??
+        orderData.name ??
+        orderData.customerName ??
+        shipping.fullName ??
+        "",
+      phone: orderData.phone ?? orderData.contactPhone ?? shipping.phone ?? "",
+      address: orderData.address ?? shipping.address ?? orderData.shippingAddress ?? "",
+      note: orderData.note ?? orderData.notes ?? shipping.note ?? "",
       // Normalize items to ensure each has productName
-      items: Array.isArray(orderData.items)
-        ? orderData.items.map((item: any) => ({
-            ...item,
-            productName: item.productName ?? item.name ?? item.title ?? "",
-          }))
-        : [],
+      items: normalizedItems,
       // Ensure createdAt exists
       createdAt: orderData.createdAt ?? new Date().toISOString(),
     };

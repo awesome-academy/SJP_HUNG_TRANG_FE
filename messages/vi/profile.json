@@ -1,0 +1,73 @@
+{
+    "ProfilePage": {
+        "title": "Trang cá nhân",
+        "subtitle": "Quản lý tài khoản của bạn",
+        "tabs": {
+            "profile": "Xem / Chỉnh sửa thông tin cá nhân",
+            "orders": "Quản lý đơn hàng"
+        },
+        "profileSection": {
+            "heading": "Thông tin cá nhân",
+            "description": "Bạn có thể xem và chỉnh sửa thông tin cơ bản tại đây.",
+            "name": "Họ và tên",
+            "email": "Email",
+            "phone": "Số điện thoại",
+            "address": "Địa chỉ",
+            "notProvided": "Chưa cập nhật",
+            "edit": "Chỉnh sửa",
+            "save": "Lưu thay đổi",
+            "cancel": "Hủy",
+            "signOut": "Đăng xuất",
+            "saved": "Đã lưu thay đổi.",
+            "saveFailed": "Không thể lưu thông tin. Vui lòng thử lại.",
+            "loadFailed": "Không thể tải thông tin cá nhân từ hệ thống."
+        },
+        "ordersSection": {
+            "heading": "Đơn hàng của bạn",
+            "description": "Chọn một đơn để xem chi tiết giao hàng và các sản phẩm đã đặt.",
+            "loading": "Đang tải danh sách đơn hàng...",
+            "fetchFailed": "Hiện không tải được đơn hàng. Vui lòng thử lại.",
+            "retry": "Thử lại",
+            "empty": "Bạn chưa có đơn hàng nào.",
+            "selectOrderHint": "Hãy chọn một đơn từ danh sách bên trái để xem chi tiết.",
+            "id": "Mã đơn",
+            "status": "Trạng thái",
+            "date": "Ngày tạo",
+            "total": "Tổng tiền",
+            "shippingInfo": "Thông tin giao hàng",
+            "address": "Địa chỉ",
+            "phone": "Số điện thoại",
+            "note": "Ghi chú",
+            "voucher": "Mã giảm giá",
+            "items": "Sản phẩm đã đặt",
+            "variant": "Phân loại",
+            "color": "Màu",
+            "size": "Size",
+            "quantity": "SL",
+            "unitPrice": "Đơn giá",
+            "lineTotal": "Thành tiền",
+            "review": {
+                "action": "Đánh giá sản phẩm",
+                "reviewed": "Đã đánh giá",
+                "modalTitle": "Đánh giá sản phẩm",
+                "rating": "Số sao",
+                "comment": "Nhận xét",
+                "commentPlaceholder": "Hãy chia sẻ trải nghiệm của bạn về sản phẩm này...",
+                "cancel": "Hủy",
+                "submit": "Gửi đánh giá",
+                "submitting": "Đang gửi...",
+                "success": "Đánh giá của bạn đã được ghi nhận.",
+                "alreadyRated": "Bạn đã đánh giá sản phẩm này trong lần mua này rồi.",
+                "error": "Không thể gửi đánh giá. Vui lòng thử lại."
+            }
+        },
+        "comingSoon": {
+            "title": "Tính năng đang phát triển",
+            "description": "Phần này sẽ được hoàn thiện ở bước tiếp theo."
+        },
+        "auth": {
+            "required": "Vui lòng đăng nhập để xem trang cá nhân.",
+            "goToLogin": "Đến trang đăng nhập"
+        }
+    }
+}
