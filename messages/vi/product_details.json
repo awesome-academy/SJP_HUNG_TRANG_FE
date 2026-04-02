@@ -1,0 +1,52 @@
+{
+    "ProductDetails": {
+        "gallery": {
+            "noImages": "Không có hình ảnh nào"
+        },
+
+        "info": {
+            "inStock": "{count} sản phẩm có sẵn",
+            "outOfStock": "Hết hàng",
+            "color": "Màu sắc",
+            "size": "Kích thước",
+            "quantity": "Số lượng",
+            "addToCart": "Thêm vào giỏ hàng",
+            "shippingReturns": "Vận chuyển & Trả hàng",
+            "warranty": "Bảo hành chính hãng",
+            "returns": "Trả hàng trong 30 ngày",
+            "like": "Like",
+            "tweet": "Tweet",
+            "googlePlus": "G+1"
+        },
+
+        "sidebar": {
+            "image": "Hình ảnh",
+            "purchases": "lượt mua",
+            "bestSellers": "Sản phẩm bán chạy",
+            "frequentlyBought": "Sản phẩm mua nhiều"
+        },
+
+        "tabs": {
+            "info": "Thông tin sản phẩm",
+            "reviews": "Đánh giá",
+            "comments": "Hỏi & Đáp",
+
+            "id": "Mã sản phẩm",
+            "name": "Tên sản phẩm",
+            "description": "Mô tả",
+            "price": "Giá",
+            "category": "Danh mục",
+
+            "stock": "Kho",
+            "stock_value": "Sản phẩm trong kho",
+
+            "noReviews": "Chưa có đánh giá nào.",
+            "noComments": "Chưa có câu hỏi nào.",
+
+            "loginToAsk": "Vui lòng đăng nhập để đặt câu hỏi",
+            "submit": "Gửi",
+
+            "user": "Người dùng"
+        }
+    }
+}

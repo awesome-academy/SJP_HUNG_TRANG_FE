@@ -1,0 +1,52 @@
+{
+    "ProductDetails": {
+        "gallery": {
+            "noImages": "No images available"
+        },
+
+        "info": {
+            "inStock": "{count} in stock",
+            "outOfStock": "Out of Stock",
+            "color": "Color",
+            "size": "Size",
+            "quantity": "Quantity",
+            "addToCart": "Add to Cart",
+            "shippingReturns": "Shipping & Returns",
+            "warranty": "Genuine Warranty",
+            "returns": "30-day Returns",
+            "like": "Like",
+            "tweet": "Tweet",
+            "googlePlus": "G+1"
+        },
+
+        "sidebar": {
+            "image": "Image",
+            "purchases": "Purchases",
+            "bestSellers": "Best Sellers",
+            "frequentlyBought": "Frequently Bought"
+        },
+
+        "tabs": {
+            "info": "Product information",
+            "reviews": "Reviews",
+            "comments": "Q&A",
+
+            "id": "Product ID",
+            "name": "Product Name",
+            "description": "Description",
+            "price": "Price",
+            "category": "Category",
+
+            "stock": "Stock",
+            "stock_value": "Items in stock",
+
+            "noReviews": "No reviews yet.",
+            "noComments": "No questions yet.",
+
+            "loginToAsk": "Please log in to ask a question",
+            "submit": "Submit",
+
+            "user": "User"
+        }
+    }
+}
