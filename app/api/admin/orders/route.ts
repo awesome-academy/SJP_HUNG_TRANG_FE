@@ -1,7 +1,7 @@
-import { ROLES } from "@/constants/role";
+import { NextRequest, NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth";
 import { getServerSession } from "next-auth";
-import { NextRequest } from "next/server";
+import { ROLES } from "@/constants/role";
 
 const BASE = process.env.JSON_SERVER_URL;
 
@@ -21,20 +21,65 @@ export async function GET(req: NextRequest) {
   }
 
   const { searchParams } = new URL(req.url);
+  
   const userId = searchParams.get("userId");
+  const status = searchParams.get("status");
+  const sortBy = searchParams.get("sort") || "createdAt";
+  const order = searchParams.get("order") || "desc";
+  const q = searchParams.get("q"); 
+  
+  const hasPage = searchParams.has("page");
+  
+  const DEFAULT_PAGE = 1;
+  const DEFAULT_LIMIT = 10;
 
-  if (!userId) {
-    return Response.json({ error: "userId is required" }, { status: 400 });
+  let page = parseInt(searchParams.get("page") || "", 10);
+  if (isNaN(page) || page < 1) page = DEFAULT_PAGE;
+
+  let limit = parseInt(searchParams.get("limit") || "", 10);
+  if (isNaN(limit) || limit < 1) limit = DEFAULT_LIMIT;
+
+  const query = new URLSearchParams();
+  
+  if (hasPage || !userId) {
+    query.append("_page", String(page));
+    query.append("_limit", String(limit));
   }
 
-  const res = await fetch(
-    `${BASE}/orders?userId=${encodeURIComponent(userId)}`,
-  );
+  query.append("_sort", sortBy); 
+  query.append("_order", order);
 
-  if (!res.ok) {
-    return Response.json({ error: "Failed" }, { status: 500 });
+  if (userId) query.append("userId", userId);
+  if (status && status !== "ALL") query.append("status", status);
+  if (q) query.append("q", q);
+
+  try {
+    const res = await fetch(`${BASE}/orders?${query.toString()}`, { cache: "no-store" });
+    if (!res.ok) throw new Error("Failed to fetch from database");
+
+    const data = await res.json();
+    const totalCount = parseInt(res.headers.get("X-Total-Count") || "0");
+
+    if (userId && !hasPage) {
+      return NextResponse.json(data);
+    }
+
+    return NextResponse.json({
+      data,
+      pagination: {
+        total: totalCount,
+        page,
+        limit
+      },
+      filters: {
+        userId: userId || null,
+        status: status || "ALL",
+        sort: sortBy,
+        order: order,
+        q: q || ""
+      }
+    });
+  } catch (error) {
+    return NextResponse.json({ error: "Failed to fetch orders" }, { status: 500 });
   }
-
-  const data = await res.json();
-  return Response.json(data);
 }
