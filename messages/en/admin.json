@@ -1,0 +1,33 @@
+{
+    "AdminPage": {
+        "title": "Admin Dashboard",
+        "subtitle": "Track business metrics and user-submitted product suggestions.",
+        "stats": {
+            "totalProducts": "Total products",
+            "totalStock": "Total stock: {count} items",
+            "orders": "Orders",
+            "pendingOrders": "Pending: {count}",
+            "revenue": "Revenue",
+            "avgOrderValue": "Average order value: {value}",
+            "customers": "Customers",
+            "customersMeta": "Active: {active} | Suggestions: {suggestions}"
+        },
+        "highlights": {
+            "title": "Products to watch",
+            "description": "Quick operational indicators",
+            "lowStock": "Low stock products (<= 5)",
+            "totalSuggestions": "Total user suggestions",
+            "pendingRate": "Pending order rate"
+        },
+        "suggestions": {
+            "title": "Suggestions",
+            "description": "User attached photos",
+            "empty": "No suggestions yet.",
+            "noDescription": "No description",
+            "photos": "Attached photos: {count}",
+            "pagination": "Page {current}/{total}",
+            "prev": "Previous",
+            "next": "Next"
+        }
+    }
+}

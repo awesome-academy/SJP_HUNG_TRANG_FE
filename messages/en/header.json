@@ -5,7 +5,12 @@
             "home": "Home",
             "about": "About",
             "products": "Products",
-            "contact": "Contact"
+            "contact": "Contact",
+            "adminDashboard": "Admin Dashboard",
+            "adminProducts": "Manage Products",
+            "adminCategories": "Manage Categories",
+            "adminOrders": "Manage Orders",
+            "adminUsers": "Manage Users"
         },
         "actions": {
             "cart": "Cart",

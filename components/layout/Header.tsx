@@ -15,9 +15,10 @@ import UserMenu from "@/components/layout/UserMenu";
 
 type HeaderProps = {
 	locale: "vi" | "en";
+	isAdmin?: boolean;
 };
 
-export default async function Header({ locale }: HeaderProps) {
+export default async function Header({ locale, isAdmin }: HeaderProps) {
 	const t = await getTranslations({ locale, namespace: "Header" });
 
 	const navItems = [
@@ -25,6 +26,14 @@ export default async function Header({ locale }: HeaderProps) {
 		{ label: t("nav.products"), href: "/products", active: false, hasDropdown: false },
 		{ label: t("nav.about"), href: "/about" },
 		{ label: t("nav.contact"), href: "/contact" },
+	];
+
+	const navItemsForAdmin = [
+		{ label: t("nav.adminDashboard"), href: "/admin" },
+		{ label: t("nav.adminProducts"), href: "/admin/products", active: false, hasDropdown: false },
+		{ label: t("nav.adminCategories"), href: "/admin/categories" },
+		{ label: t("nav.adminOrders"), href: "/admin/orders" },
+		{ label: t("nav.adminUsers"), href: "/admin/users" },
 	];
 
 	return (
@@ -42,7 +51,7 @@ export default async function Header({ locale }: HeaderProps) {
 				</Link>
 
 				<nav className="hidden flex-1 items-center justify-center gap-9 lg:flex">
-					{navItems.map((item) => (
+					{(isAdmin ? navItemsForAdmin : navItems).map((item) => (
 						<Link
 							key={item.label}
 							href={item.href}
@@ -57,7 +66,9 @@ export default async function Header({ locale }: HeaderProps) {
 				</nav>
 
 				<div className="ml-auto hidden items-center gap-2 lg:flex">
-					<Link
+					
+					{!isAdmin && (
+						<Link
 						href="/cart"
 						locale={locale}
 						className={buttonVariants({
@@ -66,22 +77,27 @@ export default async function Header({ locale }: HeaderProps) {
 							className: "text-zinc-900 hover:bg-zinc-100 hover:text-zinc-900",
 						})}
 					>
-						<ShoppingCart className="h-5 w-5" />
-						<span className="sr-only">{t("actions.cart")}</span>
-					</Link>
-					<Link
-						href="/search"
-						locale={locale}
-						className={buttonVariants({
-							variant: "ghost",
-							size: "icon",
-							className: "text-zinc-900 hover:bg-zinc-100 hover:text-zinc-900",
-						})}
-					>
-						<Search className="h-5 w-5" />
-						<span className="sr-only">{t("actions.search")}</span>
-					</Link>
-					<div className="h-6 w-px bg-zinc-300"></div>
+							<ShoppingCart className="h-5 w-5" />
+							<span className="sr-only">{t("actions.cart")}</span>
+						</Link>
+					)}
+					{!isAdmin && (
+						<Link
+							href="/search"
+							locale={locale}
+							className={buttonVariants({
+								variant: "ghost",
+								size: "icon",
+								className: "text-zinc-900 hover:bg-zinc-100 hover:text-zinc-900",
+							})}
+						>
+							<Search className="h-5 w-5" />
+							<span className="sr-only">{t("actions.search")}</span>
+						</Link>
+					)}
+					{!isAdmin && (
+						<div className="h-6 w-px bg-zinc-300"></div>
+					)}
 					<LocaleSwitcher
 						locale={locale}
 						labels={{ vi: t("locale.vi"), en: t("locale.en") }}
@@ -111,7 +127,7 @@ export default async function Header({ locale }: HeaderProps) {
 							<span className="sr-only">{t("actions.menu")}</span>
 						</DropdownMenuTrigger>
 						<DropdownMenuContent align="end" className="w-52 border-zinc-200 bg-white text-zinc-900">
-							{navItems.map((item) => (
+							{(isAdmin ? navItemsForAdmin : navItems).map((item) => (
 								<DropdownMenuItem key={item.label} className="font-semibold uppercase text-[13px]">
 									{item.label}
 								</DropdownMenuItem>
