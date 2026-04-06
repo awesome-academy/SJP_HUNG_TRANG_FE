@@ -89,6 +89,7 @@ export default function CheckoutPage({ params }: CheckoutPageProps) {
         voucherCode: appliedVoucher?.code || "",
         items: selectedItems.map((item) => ({
           productId: item.product.id,
+          productName: item.product.name,
           variantId: item.variant?.id,
           quantity: item.quantity,
           price: item.product.price,

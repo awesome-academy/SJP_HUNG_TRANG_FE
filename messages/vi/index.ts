@@ -10,6 +10,7 @@ import product_details from './product_details.json'
 import cart from './cart.json'
 import admin from './admin.json'
 import checkout from './checkout.json'
+import profile from './profile.json'
 
 const messages = {
   ...home,
@@ -23,7 +24,8 @@ const messages = {
   ...product_details,
   ...cart,
   ...admin,
-  ...checkout
+  ...checkout,
+  ...profile
 }
 
 export default messages

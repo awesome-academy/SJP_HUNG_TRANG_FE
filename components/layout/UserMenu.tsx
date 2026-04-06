@@ -65,7 +65,7 @@ export default function UserMenu({ labels, locale }: UserMenuProps) {
         <DropdownMenuSeparator className="bg-zinc-100" />
 
         <DropdownMenuItem asChild>
-          <Link href="" locale={locale} className="cursor-pointer">
+          <Link href="/user" locale={locale} className="cursor-pointer">
             <User className="mr-2 h-4 w-4" />
             {labels.profile}
           </Link>
