@@ -27,7 +27,7 @@ type SuggestionsCardProps = {
 const ITEMS_PER_PAGE = 3
 
 export default function SuggestionsCard({ suggestions }: SuggestionsCardProps) {
-    const t = useTranslations("AdminPage.suggestions")
+    const t = useTranslations("Admin.suggestions")
     const [currentPage, setCurrentPage] = useState(1)
 
     const totalPages = Math.max(1, Math.ceil(suggestions.length / ITEMS_PER_PAGE))

@@ -25,7 +25,7 @@ type AdminPageProps = {
 
 export default async function AdminPage({ params }: AdminPageProps) {
   const { locale } = await params;
-  const t = await getTranslations("AdminPage");
+  const t = await getTranslations("Admin");
   const session = await getServerSession(authOptions);
 
   if (!session) {
