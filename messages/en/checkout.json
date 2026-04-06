@@ -1,0 +1,77 @@
+{
+    "Checkout": {
+        "Please fill in all shipping information": "Please fill in all shipping information",
+        "By placing your order, you agree to our": "By placing your order, you agree to our",
+        "Terms of Service": "Terms of Service",
+        "and": "and",
+        "Privacy Policy": "Privacy Policy",
+        "Secure payment": "Secure payment",
+        "Free shipping nationwide": "Shipping nationwide",
+        "Return within 30 days": "Return within 30 days",
+        "Place Order": "Place Order",
+        "Please select at least one item to checkout": "Please select at least one item to checkout",
+        "Your cart is empty or no items selected": "Your cart is empty or no items selected",
+        "Failed to connect to server": "Failed to connect to server",
+        "Order placed successfully": "Order placed successfully!",
+        "Processing": "Processing...",
+
+        "address": {
+            "Please fill in all shipping information": "Please fill in all shipping information",
+            "Loading user information": "Loading user information...",
+            "Shipping Address": "Shipping Address",
+            "Change": "Change",
+            "Note": "Note",
+            "Full Name": "Full Name",
+            "Name Example": "Nguyen Van A",
+            "Phone Number": "Phone Number",
+            "Phone Example": "0123456789",
+            "Specific Address": "Specific Address",
+            "Address Example": "House number, street name, ward/commune, district...",
+            "Note for shipper": "Note for shipper",
+            "Note Example": "e.g., Deliver during business hours, leave at the doorman...",
+            "Cancel": "Cancel",
+            "Use this address": "Use this address"
+        },
+
+        "orderSummary": {
+            "Order": "Order",
+            "products": "products",
+            "Subtotal": "Subtotal",
+            "Product Discount": "Product Discount",
+            "Voucher": "Voucher",
+            "Total": "Total",
+            "You saved": "You saved",
+            "No Image": "No Image",
+            "Product not found": "Product not found",
+            "Category": "Category",
+            "Shipping Fee": "Shipping Fee"
+        },
+
+        "voucher": {
+            "Voucher": "Voucher",
+            "Enter voucher code": "Enter voucher code",
+            "Loading": "Loading...",
+            "Voucher code": "Voucher code",
+            "Check": "Check",
+            "Successfully applied!": "Successfully applied!",
+            "You saved": "You saved",
+            "on this order": "on this order",
+            "Remove": "Remove",
+            "Discount": "Discount",
+            "on orders from": "on orders from",
+            "Expired": "Expired",
+            "Expires on": "Expires on",
+            "Need more": "Need more",
+            "Use": "Use",
+            "View": "View",
+            "Hide": "Hide",
+            "Available vouchers": "available vouchers",
+            "No available vouchers": "No available vouchers.",
+            "Voucher not found": "Voucher not found",
+            "Voucher expired": "Voucher expired",
+            "Order total needs": "Order total needs",
+            "to use this voucher": "to use this voucher",
+            "Discount badge": "DISCOUNT"
+        }
+    }
+}
