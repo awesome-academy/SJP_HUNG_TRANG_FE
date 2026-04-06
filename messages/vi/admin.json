@@ -122,6 +122,235 @@
                 "voucher": "Mã giảm giá",
                 "productId": "Sản phẩm"
 
+        },
+
+        "categories": {
+            "title": "Quản lý danh mục",
+            "subtitle": "Xem và quản lý các danh mục sản phẩm trong hệ thống",
+            "add_category": "Thêm Danh Mục",
+            "total_categories": "Tổng Số Danh Mục",
+            "root_categories": "Danh Mục Gốc",
+            "max_depth": "Độ Sâu Tối Đa",
+            "all_levels": "Tất cả cấp",
+            "top_level": "Cấp cao nhất",
+            "levels": "cấp",
+            "category_tree": "Cây danh mục",
+            "search_categories": "Tìm kiếm danh mục...",
+            "level_1": "Cấp 1",
+            "level_2": "Cấp 2",
+            "level_3": "Cấp 3",
+            "level_4_plus": "Cấp 4+",
+            "legend_desc": "Di chuột vào hàng để thấy thao tác",
+            "loading_categories": "Đang tải...",
+            "no_categories_found": "Không tìm thấy danh mục nào cho",
+            "refresh": "Làm mới",
+            "description": "Quản lý cấu trúc phân cấp của các danh mục sản phẩm.",
+            "summary": {
+                "filtered": "Hiển thị {filtered} / {total} danh mục",
+                "all": "{total} danh mục · {root} gốc · sâu nhất {depth} cấp"
+            },
+
+            "form": {
+                "name": "Tên danh mục",
+                "placeholder": "VD: Son môi, Túi xách...",
+                "parent": "Danh mục cha",
+                "parent_hint": "Để trống nếu đây là danh mục gốc",
+                "root_category": "Danh mục gốc (không có cha)",
+                "path_preview": "Xem trước đường dẫn",
+                "cancel": "Huỷ",
+                "save_changes": "Lưu thay đổi",
+                "add_category": "Thêm danh mục",
+                "saving": "Đang lưu...",
+                "edit_category": "Chỉnh sửa danh mục",
+                "validation": {
+                    "name": {
+                        "required": "Tên danh mục là bắt buộc",
+                        "minLength": "Tên danh mục phải có ít nhất 2 ký tự"
+                    }
+                }
+            },
+
+            "tree": {
+                "delete_confirm_full": "Xoá danh mục \"{name}\" và {count} danh mục con",
+                "delete_confirm_no_child": "Xoá danh mục \"{name}\"",
+                "and_its_descendants": "và các danh mục con",
+                "cancel": "Huỷ",
+                "confirm_delete": "Xoá",
+                "children": "con",
+                "no_categories_found": "Không tìm thấy danh mục nào.",
+                "actions": {
+                    "addChild": "Thêm con",
+                    "edit": "Chỉnh sửa",
+                    "delete": "Xóa"
+                }
+            }
+        },
+
+        "products": {
+            "productManagement": "Quản lý sản phẩm",
+            "total": "Tổng cộng",
+            "products": "sản phẩm",
+            "refresh": "Làm mới",
+            "addProduct": "Thêm Sản Phẩm",
+            "totalProducts": "Tổng Số Sản Phẩm",
+            "all": "Tất cả",
+            "current_page": "Trang hiện tại",
+            "outOfStock": "Hết Hàng",
+            "thisPage": "Trang này",
+            "lowStock": "Tồn Kho Ít",
+            "lowStockDescription": "<= 5 sản phẩm",
+            "searchPlaceholder": "Tìm kiếm sản phẩm...",
+            "Category ID": "ID Danh Mục",
+            "filterByName": "Lọc theo tên",
+            "filterByCategoryId": "Lọc theo ID danh mục",
+            "priceFrom": "Giá từ",
+            "filterByPriceFrom": "Lọc từ",
+            "priceTo": "Giá đến",
+            "filterByPriceTo": "Lọc đến",
+            "loading": "Đang tải...",
+            "noProductsFound": "Không tìm thấy sản phẩm nào",
+            "clearFilters": "Xóa Bộ Lọc",
+            "image": "Ảnh",
+            "productName": "Tên Sản Phẩm",
+            "price": "Giá",
+            "stock": "Tồn Kho",
+            "category": "Danh Mục",
+            "type": "Loại",
+            "hasVariants": "Có biến thể",
+            "simple": "Đơn giản",
+            "view": "Xem",
+            "delete": "Xóa",
+            "deleteConfirmTitle": "Xác nhận Xóa",
+            "areYouSure": "Bạn có chắc chắn muốn xóa",
+            "thisActionCannotBeUndone": " Hành động này không thể hoàn tác.",
+            "cancel": "Hủy",
+            "showing": "Đang hiển thị",
+            "of": "của",
+            "filters": "Bộ lọc",
+            "page": "Trang",
+            "clear": "Xóa",
+            "name": "Tên sản phẩm",
+            "backToList": "Quay lại danh sách",
+            "createProduct": "Tạo sản phẩm mới"
+        },
+
+        "product_details": {
+            "outOfStock": "Hết Hàng",
+            "lowStock": "ít Hàng",
+            "inStock": "Còn Hàng",
+            "noImages": "Không Có Hình Ảnh",
+            "loading": "Đang Tải...",
+            "notFound": "Không Tìm Thấy Sản Phẩm.",
+            "images": "Hình Ảnh",
+            "stock": "Tồn Kho",
+            "category": "Danh Mục",
+            "editProduct": "Chỉnh Sửa Sản Phẩm",
+            "edit_form_title": "Chỉnh Sửa Thông Tin Sản Phẩm",
+            "details": "Chi Tiết",
+            "name": "Tên",
+            "description": "Mô Tả",
+            "basePrice": "Giá Gốc",
+            "variants": "Biến Thể",
+            "color": "Màu Sắc",
+            "size": "Kích Cỡ",
+            
+            "edit_form": {
+                "name": "Tên",
+                "description": "Mô Tả",
+                "price": "Giá",
+                "stock": "Tồn Kho",
+                "variants": "Biến Thể",
+                "addVariant": "+ Thêm Biến Thể",
+                "color": "Màu Sắc",
+                "colorPlaceholder": "Đỏ",
+                "size": "Kích Cỡ",
+                "sizePlaceholder": "M",
+                "noVariants": "Sản phẩm này chưa có biến thể.",
+                "cancel": "Hủy",
+                "saveChanges": "Lưu Thay Đổi",
+                "saving": "Đang Lưu...",
+                "setMainImage": "Đặt làm Ảnh Chính",
+                "mainImage": "Ảnh Chính",
+                "addImage": "Thêm Ảnh",
+                "images": "Hình Ảnh"
+            }
+        },
+
+         "orders": {
+            "orders_management": "Quản lý đơn hàng",
+            "total": "Tổng cộng ",
+            "orders": " đơn hàng",
+
+            "refresh": "Làm mới",
+
+            "total_orders": "Tổng số đơn hàng",
+            "ALL": "tất cả",
+            "PENDING": "Chờ xử lý",
+            "CONFIRMED": "Đã xác nhận",
+            "SHIPPING": "Đang giao",
+            "DELIVERED": "Đã giao",
+            "CANCELLED": "Đã hủy",
+
+            "search_orders": "Tìm kiếm đơn hàng, địa chỉ, tên...",
+
+            "all_orders": "Tất cả",
+            "clear_filters": "Xóa bộ lọc",
+
+            "loading": "Đang Tải...",
+            "no_orders_found": "Không tìm thấy đơn hàng nào",
+
+            "id": "ID",
+            "customer": "Khách hàng",
+            "products": "Sản phẩm",
+            "total_price": "Tổng cộng",
+            "status": "Trạng thái",
+            "order_date": "Ngày đặt hàng",
+
+            "view": "Xem",
+
+            "delete_confirm_title": "Xóa Đơn Hàng?",
+            "delete_confirm_message": "Bạn có chắc chắn muốn xóa đơn hàng",
+            "of": "của",
+            "cancel": "Hủy",
+            "delete": "Xóa",
+            "pagination": {
+                "showing": "Hiển thị {from}–{to} trong {total} kết quả"
+            }
+        },
+
+         "orders_details": {
+            "loading": "Đang tải...",
+            "order_not_found": "Đơn hàng không được tìm thấy.",
+            "back_to_list": "Quay lại danh sách",
+
+            "placed_at": "Đặt hàng lúc",
+            "refresh": "Làm mới",
+
+            "status_timeline": "Timeline Đơn Hàng",
+            "update_status": "Cập Nhật Trạng Thái",
+            "order_cancelled": "Đơn hàng đã bị hủy",
+
+            "customer_info": "Thông tin khách hàng",
+            "full_name": "Họ và tên",
+            "phone": "Số điện thoại",
+            "shipping_address": "Địa chỉ giao hàng",
+            "notes": "Ghi chú",
+            "no_notes": "Không có ghi chú",
+            "voucher_code": "Mã giảm giá",
+            "user_id": "ID Người Dùng",
+
+            "order_summary": "Tổng kết đơn hàng",
+            "items": "sản phẩm",
+            "voucher": "Mã giảm giá",
+            "total": "Tổng cộng",
+
+            "product_id": "ID sản phẩm",
+
+            "PENDING": "Chờ xử lý",
+            "CONFIRMED": "Đã xác nhận",
+            "SHIPPING": "Đang giao",
+            "DELIVERED": "Đã giao",
+            "CANCELLED": "Đã hủy"
         }
     }
 }
