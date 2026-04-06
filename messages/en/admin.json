@@ -122,6 +122,158 @@
                 "voucher": "Voucher",
                 "productId": "Product"
 
+        },
+
+        "categories": {
+            "title": "Category Management",
+            "subtitle": "View and manage product categories in the system",
+            "add_category": "Add Category",
+            "total_categories": "Total Categories",
+            "root_categories": "Root Categories",
+            "max_depth": "Max Depth",
+            "all_levels": "All Levels",
+            "top_level": "Top Level",
+            "levels": "Levels",
+            "category_tree": "Category Tree",
+            "search_categories": "Search categories...",
+            "level_1": "Level 1",
+            "level_2": "Level 2",
+            "level_3": "Level 3",
+            "level_4_plus": "Level 4+",
+            "legend_desc": "Hover over rows to see actions",
+            "loading_categories": "Loading categories...",
+            "no_categories_found": "No categories found for",
+            "refresh": "Refresh",
+            "description": "Manage the hierarchical structure of product categories.",
+            "summary": {
+                "filtered": "Showing {filtered} / {total} categories",
+                "all": "{total} categories · {root} roots · max depth {depth} levels"
+            },
+
+            "form": {
+                "name": "Category Name",
+                "placeholder": "e.g., Lipstick, Handbags...",
+                "parent": "Parent Category",
+                "parent_hint": "Leave blank if this is a root category",
+                "root_category": "Root Category (no parent)",
+                "path_preview": "Path Preview",
+                "cancel": "Cancel",
+                "save_changes": "Save Changes",
+                "add_category": "Add Category",
+                "saving": "Saving...",
+                "edit_category": "Edit Category",
+                "validation": {
+                    "name": {
+                        "required": "Category name is required",
+                        "minLength": "Category name must be at least 2 characters"
+                    }
+                }
+            },
+
+            "tree": {
+                "delete_confirm_full": "Delete category \"{name}\" and {count} its descendants",
+                "delete_confirm_no_child": "Delete category \"{name}\"",
+                "and_its_descendants": "and its descendants",
+                "cancel": "Cancel",
+                "confirm_delete": "Delete",
+                "children": "children",
+                "no_categories_found": "No categories found.",
+                "actions": {
+                    "addChild": "Add Child",
+                    "edit": "Edit",
+                    "delete": "Delete"
+                }
+            }
+        },
+
+        "products": {
+            "productManagement": "Product Management",
+            "total": "Total",
+            "products": "products",
+            "refresh": "Refresh",
+            "addProduct": "Add Product",
+            "totalProducts": "Total Products",
+            "all": "All",
+            "current_page": "Current Page",
+            "outOfStock": "Out of Stock",
+            "thisPage": "This page",
+            "lowStock": "Low Stock",
+            "lowStockDescription": "<= 5 items left",
+            "searchPlaceholder": "Search products...",
+            "Category ID": "Category ID",
+            "filterByName": "Filter by name",
+            "filterByCategoryId": "Filter by category ID",
+            "priceFrom": "Price From",
+            "filterByPriceFrom": "Filter from",
+            "priceTo": "Price To",
+            "filterByPriceTo": "Filter to",
+            "loading": "Loading...",
+            "noProductsFound": "No products found",
+            "clearFilters": "Clear Filters",
+            "image": "Image",
+            "productName": "Product Name",
+            "price": "Price",
+            "stock": "Stock",
+            "category": "Category",
+            "type": "Type",
+            "hasVariants": "Has Variants",
+            "simple": "Simple",
+            "view": "View",
+            "delete": "Delete",
+            "deleteConfirmTitle": "Confirm Deletion",
+            "areYouSure": "Are you sure you want to delete",
+            "thisActionCannotBeUndone": " This action cannot be undone.",
+            "cancel": "Cancel",
+            "showing": "Showing",
+            "of": "of",
+            "filters": "Filters",
+            "page": "Page",
+            "clear": "Clear",
+            "name": "Name",
+            "backToList": "Back to List",
+            "createProduct": "Create New Product"
+        },
+
+        "product_details": {
+            "outOfStock": "Out of Stock",
+            "lowStock": "Low Stock",
+            "inStock": "In Stock",
+            "noImages": "No Images",
+            "loading": "Loading...",
+            "notFound": "Product not found.",
+            "images": "Images",
+            "stock": "Stock",
+            "category": "Category",
+            "editProduct": "Edit Product",
+            "edit_form_title": "Edit Product Information",
+            "details": "Details",
+            "name": "Name",
+            "description": "Description",
+            "basePrice": "Base Price",
+            "variants": "Variants",
+            "color": "Color",
+            "size": "Size",
+
+            "edit_form": {
+                "name": "Name",
+                "description": "Description",
+                "price": "Price",
+                "stock": "Stock",
+                "variants": "Variants",
+                "addVariant": "+ Add Variant",
+                "color": "Color",
+                "colorPlaceholder": "Red",
+                "size": "Size",
+                "sizePlaceholder": "M",
+                "noVariants": "This product has no variants yet.",
+                "cancel": "Cancel",
+                "saveChanges": "Save Changes",
+                "saving": "Saving...",
+                "setMainImage": "Set as Main Image",
+                "mainImage": "Main Image",
+                "addImage": "Add Image",
+                "images": "Images"
+            }
         }
     }
 }
